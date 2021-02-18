@@ -12,6 +12,23 @@
 		6C1210D125DD8543009AA4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1210CF25DD8543009AA4F4 /* Main.storyboard */; };
 		6C1210D325DD8544009AA4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1210D225DD8544009AA4F4 /* Assets.xcassets */; };
 		6C1210D625DD8544009AA4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1210D425DD8544009AA4F4 /* LaunchScreen.storyboard */; };
+		6C1210E825DE31B8009AA4F4 /* InspirationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210E725DE31B8009AA4F4 /* InspirationTableViewController.swift */; };
+		6C1210EC25DE31E4009AA4F4 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210EB25DE31E4009AA4F4 /* MessagesTableViewController.swift */; };
+		6C1210EF25DE321E009AA4F4 /* MessageComposerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */; };
+		6C1210F225DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210F125DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift */; };
+		6C1210F525DE32D6009AA4F4 /* MyCircleVisualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210F425DE32D6009AA4F4 /* MyCircleVisualViewController.swift */; };
+		6C1210F825DE3304009AA4F4 /* MyCircleListViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210F725DE3304009AA4F4 /* MyCircleListViewTableViewController.swift */; };
+		6C12110125DE34F2009AA4F4 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110025DE34F2009AA4F4 /* Contact.swift */; };
+		6C12110425DE350E009AA4F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110325DE350E009AA4F4 /* User.swift */; };
+		6C12110A25DE35A2009AA4F4 /* InspirationPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110925DE35A2009AA4F4 /* InspirationPostTableViewCell.swift */; };
+		6C12110E25DE361C009AA4F4 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110D25DE361C009AA4F4 /* MessageTableViewCell.swift */; };
+		6C12111125DE3657009AA4F4 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111025DE3657009AA4F4 /* ContactTableViewCell.swift */; };
+		6C12111425DE36AE009AA4F4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111325DE36AE009AA4F4 /* Message.swift */; };
+		6C12111725DE370E009AA4F4 /* InspirationPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111625DE370E009AA4F4 /* InspirationPost.swift */; };
+		6C12111A25DE3754009AA4F4 /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111925DE3754009AA4F4 /* ContactController.swift */; };
+		6C12111D25DE375E009AA4F4 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111C25DE375E009AA4F4 /* UserController.swift */; };
+		6C12112025DE3766009AA4F4 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111F25DE3766009AA4F4 /* MessageController.swift */; };
+		6C12112325DE376F009AA4F4 /* InspirationPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112225DE376F009AA4F4 /* InspirationPostController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +39,23 @@
 		6C1210D225DD8544009AA4F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C1210D525DD8544009AA4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C1210D725DD8544009AA4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1210E725DE31B8009AA4F4 /* InspirationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationTableViewController.swift; sourceTree = "<group>"; };
+		6C1210EB25DE31E4009AA4F4 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposerViewController.swift; sourceTree = "<group>"; };
+		6C1210F125DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleSegmentedOptionsViewController.swift; sourceTree = "<group>"; };
+		6C1210F425DE32D6009AA4F4 /* MyCircleVisualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleVisualViewController.swift; sourceTree = "<group>"; };
+		6C1210F725DE3304009AA4F4 /* MyCircleListViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleListViewTableViewController.swift; sourceTree = "<group>"; };
+		6C12110025DE34F2009AA4F4 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		6C12110325DE350E009AA4F4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6C12110925DE35A2009AA4F4 /* InspirationPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationPostTableViewCell.swift; sourceTree = "<group>"; };
+		6C12110D25DE361C009AA4F4 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		6C12111025DE3657009AA4F4 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		6C12111325DE36AE009AA4F4 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		6C12111625DE370E009AA4F4 /* InspirationPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationPost.swift; sourceTree = "<group>"; };
+		6C12111925DE3754009AA4F4 /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		6C12111C25DE375E009AA4F4 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		6C12111F25DE3766009AA4F4 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		6C12112225DE376F009AA4F4 /* InspirationPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationPostController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +88,10 @@
 		6C1210C825DD8543009AA4F4 /* MakeTheirDay */ = {
 			isa = PBXGroup;
 			children = (
-				6C1210E025DD86D0009AA4F4 /* Storyboards */,
+				6C1210E425DE314F009AA4F4 /* Models */,
+				6C1210E525DE3155009AA4F4 /* Model Controllers */,
+				6C12110625DE3574009AA4F4 /* Views */,
+				6C1210FA25DE33AF009AA4F4 /* Helpers & Extensions */,
 				6C1210DE25DD86B8009AA4F4 /* Resources */,
 			);
 			path = MakeTheirDay;
@@ -78,6 +115,68 @@
 				6C1210D425DD8544009AA4F4 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6C1210E425DE314F009AA4F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6C12110025DE34F2009AA4F4 /* Contact.swift */,
+				6C12110325DE350E009AA4F4 /* User.swift */,
+				6C12111325DE36AE009AA4F4 /* Message.swift */,
+				6C12111625DE370E009AA4F4 /* InspirationPost.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C1210E525DE3155009AA4F4 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C12111925DE3754009AA4F4 /* ContactController.swift */,
+				6C12111C25DE375E009AA4F4 /* UserController.swift */,
+				6C12111F25DE3766009AA4F4 /* MessageController.swift */,
+				6C12112225DE376F009AA4F4 /* InspirationPostController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		6C1210E625DE315C009AA4F4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C1210E725DE31B8009AA4F4 /* InspirationTableViewController.swift */,
+				6C1210EB25DE31E4009AA4F4 /* MessagesTableViewController.swift */,
+				6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */,
+				6C1210F125DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift */,
+				6C1210F425DE32D6009AA4F4 /* MyCircleVisualViewController.swift */,
+				6C1210F725DE3304009AA4F4 /* MyCircleListViewTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6C1210FA25DE33AF009AA4F4 /* Helpers & Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Helpers & Extensions";
+			sourceTree = "<group>";
+		};
+		6C12110625DE3574009AA4F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C12110825DE3585009AA4F4 /* Cusom Cells */,
+				6C1210E625DE315C009AA4F4 /* View Controllers */,
+				6C1210E025DD86D0009AA4F4 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C12110825DE3585009AA4F4 /* Cusom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6C12110925DE35A2009AA4F4 /* InspirationPostTableViewCell.swift */,
+				6C12110D25DE361C009AA4F4 /* MessageTableViewCell.swift */,
+				6C12111025DE3657009AA4F4 /* ContactTableViewCell.swift */,
+			);
+			path = "Cusom Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +249,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C12111125DE3657009AA4F4 /* ContactTableViewCell.swift in Sources */,
+				6C12112025DE3766009AA4F4 /* MessageController.swift in Sources */,
 				6C1210CA25DD8543009AA4F4 /* AppDelegate.swift in Sources */,
+				6C12111A25DE3754009AA4F4 /* ContactController.swift in Sources */,
+				6C1210F525DE32D6009AA4F4 /* MyCircleVisualViewController.swift in Sources */,
+				6C12110125DE34F2009AA4F4 /* Contact.swift in Sources */,
+				6C1210F825DE3304009AA4F4 /* MyCircleListViewTableViewController.swift in Sources */,
+				6C12111D25DE375E009AA4F4 /* UserController.swift in Sources */,
+				6C1210EF25DE321E009AA4F4 /* MessageComposerViewController.swift in Sources */,
+				6C12112325DE376F009AA4F4 /* InspirationPostController.swift in Sources */,
+				6C12110E25DE361C009AA4F4 /* MessageTableViewCell.swift in Sources */,
+				6C1210F225DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift in Sources */,
+				6C1210EC25DE31E4009AA4F4 /* MessagesTableViewController.swift in Sources */,
+				6C1210E825DE31B8009AA4F4 /* InspirationTableViewController.swift in Sources */,
+				6C12111725DE370E009AA4F4 /* InspirationPost.swift in Sources */,
 				6C1210CC25DD8543009AA4F4 /* SceneDelegate.swift in Sources */,
+				6C12110425DE350E009AA4F4 /* User.swift in Sources */,
+				6C12110A25DE35A2009AA4F4 /* InspirationPostTableViewCell.swift in Sources */,
+				6C12111425DE36AE009AA4F4 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +416,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W578QLR797;
-				INFOPLIST_FILE = MakeTheirDay/Info.plist;
+				INFOPLIST_FILE = MakeTheirDay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +435,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W578QLR797;
-				INFOPLIST_FILE = MakeTheirDay/Info.plist;
+				INFOPLIST_FILE = MakeTheirDay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
