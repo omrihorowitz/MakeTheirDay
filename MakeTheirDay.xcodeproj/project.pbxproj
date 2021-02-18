@@ -29,6 +29,9 @@
 		6C12111D25DE375E009AA4F4 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111C25DE375E009AA4F4 /* UserController.swift */; };
 		6C12112025DE3766009AA4F4 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111F25DE3766009AA4F4 /* MessageController.swift */; };
 		6C12112325DE376F009AA4F4 /* InspirationPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112225DE376F009AA4F4 /* InspirationPostController.swift */; };
+		6C12112725DE3943009AA4F4 /* VideoRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112625DE3943009AA4F4 /* VideoRecord.swift */; };
+		6C12112A25DE394E009AA4F4 /* AudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112925DE394E009AA4F4 /* AudioRecord.swift */; };
+		6C12112D25DE395D009AA4F4 /* ShareMessageToSend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112C25DE395D009AA4F4 /* ShareMessageToSend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		6C12111C25DE375E009AA4F4 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		6C12111F25DE3766009AA4F4 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		6C12112225DE376F009AA4F4 /* InspirationPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationPostController.swift; sourceTree = "<group>"; };
+		6C12112625DE3943009AA4F4 /* VideoRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecord.swift; sourceTree = "<group>"; };
+		6C12112925DE394E009AA4F4 /* AudioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecord.swift; sourceTree = "<group>"; };
+		6C12112C25DE395D009AA4F4 /* ShareMessageToSend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareMessageToSend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,9 @@
 		6C1210FA25DE33AF009AA4F4 /* Helpers & Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6C12112625DE3943009AA4F4 /* VideoRecord.swift */,
+				6C12112925DE394E009AA4F4 /* AudioRecord.swift */,
+				6C12112C25DE395D009AA4F4 /* ShareMessageToSend.swift */,
 			);
 			path = "Helpers & Extensions";
 			sourceTree = "<group>";
@@ -249,8 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C12112D25DE395D009AA4F4 /* ShareMessageToSend.swift in Sources */,
 				6C12111125DE3657009AA4F4 /* ContactTableViewCell.swift in Sources */,
 				6C12112025DE3766009AA4F4 /* MessageController.swift in Sources */,
+				6C12112A25DE394E009AA4F4 /* AudioRecord.swift in Sources */,
 				6C1210CA25DD8543009AA4F4 /* AppDelegate.swift in Sources */,
 				6C12111A25DE3754009AA4F4 /* ContactController.swift in Sources */,
 				6C1210F525DE32D6009AA4F4 /* MyCircleVisualViewController.swift in Sources */,
@@ -267,6 +278,7 @@
 				6C1210CC25DD8543009AA4F4 /* SceneDelegate.swift in Sources */,
 				6C12110425DE350E009AA4F4 /* User.swift in Sources */,
 				6C12110A25DE35A2009AA4F4 /* InspirationPostTableViewCell.swift in Sources */,
+				6C12112725DE3943009AA4F4 /* VideoRecord.swift in Sources */,
 				6C12111425DE36AE009AA4F4 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
