@@ -253,7 +253,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messagebackground-1" translatesAutoresizingMaskIntoConstraints="NO" id="gef-M9-eep">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messagebackground2" translatesAutoresizingMaskIntoConstraints="NO" id="gef-M9-eep">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5e-HU-voy">
@@ -819,7 +819,7 @@
         <image name="lightbulb" catalog="system" width="113" height="128"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <image name="messagebackground" width="6016" height="4016"/>
-        <image name="messagebackground-1" width="3197" height="4848"/>
+        <image name="messagebackground2" width="3197" height="4848"/>
         <image name="mic.fill" catalog="system" width="108" height="128"/>
         <image name="paperclip.circle" catalog="system" width="128" height="121"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
