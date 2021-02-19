@@ -32,6 +32,8 @@
 		6C12112725DE3943009AA4F4 /* VideoRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112625DE3943009AA4F4 /* VideoRecord.swift */; };
 		6C12112A25DE394E009AA4F4 /* AudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112925DE394E009AA4F4 /* AudioRecord.swift */; };
 		6C12112D25DE395D009AA4F4 /* ShareMessageToSend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112C25DE395D009AA4F4 /* ShareMessageToSend.swift */; };
+		6C12113025DF2EDB009AA4F4 /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112F25DF2EDB009AA4F4 /* LocalNotifications.swift */; };
+		6C12113325DF2F0B009AA4F4 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12113225DF2F0B009AA4F4 /* APIController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		6C12112625DE3943009AA4F4 /* VideoRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecord.swift; sourceTree = "<group>"; };
 		6C12112925DE394E009AA4F4 /* AudioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecord.swift; sourceTree = "<group>"; };
 		6C12112C25DE395D009AA4F4 /* ShareMessageToSend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareMessageToSend.swift; sourceTree = "<group>"; };
+		6C12112F25DF2EDB009AA4F4 /* LocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotifications.swift; sourceTree = "<group>"; };
+		6C12113225DF2F0B009AA4F4 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 				6C12111C25DE375E009AA4F4 /* UserController.swift */,
 				6C12111F25DE3766009AA4F4 /* MessageController.swift */,
 				6C12112225DE376F009AA4F4 /* InspirationPostController.swift */,
+				6C12112F25DF2EDB009AA4F4 /* LocalNotifications.swift */,
+				6C12113225DF2F0B009AA4F4 /* APIController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 				6C12111A25DE3754009AA4F4 /* ContactController.swift in Sources */,
 				6C1210F525DE32D6009AA4F4 /* MyCircleVisualViewController.swift in Sources */,
 				6C12110125DE34F2009AA4F4 /* Contact.swift in Sources */,
+				6C12113025DF2EDB009AA4F4 /* LocalNotifications.swift in Sources */,
 				6C1210F825DE3304009AA4F4 /* MyCircleListViewTableViewController.swift in Sources */,
 				6C12111D25DE375E009AA4F4 /* UserController.swift in Sources */,
 				6C1210EF25DE321E009AA4F4 /* MessageComposerViewController.swift in Sources */,
@@ -277,6 +284,7 @@
 				6C12111725DE370E009AA4F4 /* InspirationPost.swift in Sources */,
 				6C1210CC25DD8543009AA4F4 /* SceneDelegate.swift in Sources */,
 				6C12110425DE350E009AA4F4 /* User.swift in Sources */,
+				6C12113325DF2F0B009AA4F4 /* APIController.swift in Sources */,
 				6C12110A25DE35A2009AA4F4 /* InspirationPostTableViewCell.swift in Sources */,
 				6C12112725DE3943009AA4F4 /* VideoRecord.swift in Sources */,
 				6C12111425DE36AE009AA4F4 /* Message.swift in Sources */,
