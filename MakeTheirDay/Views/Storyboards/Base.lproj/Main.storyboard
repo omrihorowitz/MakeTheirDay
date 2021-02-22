@@ -49,7 +49,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="l2R-bv-fgx" secondAttribute="height" multiplier="1:1" id="d1Y-ZT-t2C"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                 <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Add Picture">
@@ -63,7 +63,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8BI-uv-hVm" secondAttribute="height" multiplier="1:1" id="BY1-YF-ucF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                 <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Add Picture">
@@ -77,7 +77,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Pby-4M-NW9" secondAttribute="height" multiplier="1:1" id="BTB-ne-dtd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                 <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Add Picture">
@@ -91,7 +91,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Z5y-8w-BtC" secondAttribute="height" multiplier="1:1" id="9ty-Id-KeM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                 <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Add Picture">
@@ -106,7 +106,7 @@
                                     <constraint firstAttribute="height" constant="100" id="OcW-m1-dft"/>
                                     <constraint firstAttribute="width" secondItem="FN1-lL-Zni" secondAttribute="height" multiplier="1:1" id="X3J-dc-D8H"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                 <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Add Picture">
@@ -121,7 +121,7 @@
                                     <constraint firstAttribute="height" constant="100" id="Iet-oK-29H"/>
                                     <constraint firstAttribute="width" secondItem="XUE-42-J9E" secondAttribute="height" multiplier="1:1" id="oKi-HJ-xzg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                 <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Add Picture">
@@ -135,7 +135,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="xWG-YZ-RNR" secondAttribute="height" multiplier="1:1" id="b14-d5-ytC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                 <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Add Picture">
@@ -147,49 +147,49 @@
                                 <rect key="frame" x="10" y="298" width="101" height="34"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3Q-bS-ng8">
                                 <rect key="frame" x="154" y="229" width="101" height="34"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="knt-jR-B4S">
                                 <rect key="frame" x="290" y="298" width="101" height="34"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CvL-3s-FJe">
                                 <rect key="frame" x="290" y="539" width="101" height="34"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHE-1e-hFu">
                                 <rect key="frame" x="154" y="608" width="101" height="34"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAh-BW-yh1">
                                 <rect key="frame" x="17" y="539" width="101" height="34"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJv-fo-IjM">
                                 <rect key="frame" x="143" y="431" width="123" height="34"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -254,7 +254,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messagebackground2" translatesAutoresizingMaskIntoConstraints="NO" id="gef-M9-eep">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messagecomposer1" translatesAutoresizingMaskIntoConstraints="NO" id="gef-M9-eep">
                                 <rect key="frame" x="0.0" y="-44" width="414" height="886"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5e-HU-voy">
@@ -267,23 +267,23 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLA-z8-rXF">
-                                        <rect key="frame" x="121" y="39" width="245" height="21"/>
+                                        <rect key="frame" x="121" y="39" width="245" height="44"/>
                                         <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="245" id="TRs-Be-Gw5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
                                         <color key="textColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last in touch..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmX-3x-a2y">
-                                        <rect key="frame" x="121" y="68" width="245" height="21"/>
+                                        <rect key="frame" x="121" y="91" width="245" height="21"/>
                                         <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="T9q-LC-8Se"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="16"/>
                                         <color key="textColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
@@ -307,16 +307,16 @@
                                 <color key="tintColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pickerView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message Subject here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f6d-JI-nww">
-                                <rect key="frame" x="20" y="228" width="341" height="34"/>
+                                <rect key="frame" x="20" y="228" width="341" height="53.5"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Co7-Bd-WmU">
-                                <rect key="frame" x="19" y="270" width="343" height="331"/>
+                                <rect key="frame" x="19" y="289.5" width="343" height="306"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="331" id="4eU-hd-coL"/>
+                                    <constraint firstAttribute="height" constant="306" id="4eU-hd-coL"/>
                                 </constraints>
                                 <string key="text">Message to someone from My Circle here! Write it in text, or record as an audio or video message with the buttons below! Press the text or mail buttons to package up your message for sending.</string>
                                 <color key="textColor" red="0.44606372565193375" green="0.50441736112431967" blue="0.7381431502525253" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -324,10 +324,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwk-u4-6f7">
-                                <rect key="frame" x="19" y="535" width="343" height="27"/>
+                                <rect key="frame" x="19" y="535" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="Aqu-yZ-SFW"/>
+                                    <constraint firstAttribute="height" constant="30" id="Aqu-yZ-SFW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
                                 <color key="tintColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -337,7 +337,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svm-0b-xrc">
-                                <rect key="frame" x="19" y="562" width="343" height="39"/>
+                                <rect key="frame" x="19" y="565" width="343" height="29.5"/>
                                 <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
                                 <color key="tintColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -354,9 +354,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdM-Aq-Gb9">
-                                <rect key="frame" x="20" y="601" width="132" height="125"/>
+                                <rect key="frame" x="20" y="594.5" width="132" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="OYk-zJ-m9f"/>
+                                    <constraint firstAttribute="height" constant="100" id="OYk-zJ-m9f"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="tintColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -368,7 +368,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mj-sG-OLq">
-                                <rect key="frame" x="150" y="601" width="131" height="125"/>
+                                <rect key="frame" x="150" y="594.5" width="131" height="100"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="tintColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -382,7 +382,7 @@
                         <viewLayoutGuide key="safeArea" id="J3j-Ph-MUH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Svm-0b-xrc" firstAttribute="top" secondItem="A7o-lF-I5T" secondAttribute="bottom" constant="26" id="0Hg-wO-D31"/>
+                            <constraint firstItem="Svm-0b-xrc" firstAttribute="top" secondItem="A7o-lF-I5T" secondAttribute="bottom" constant="29" id="0Hg-wO-D31"/>
                             <constraint firstItem="z5e-HU-voy" firstAttribute="top" secondItem="J3j-Ph-MUH" secondAttribute="top" constant="38" id="0jP-wc-ikF"/>
                             <constraint firstItem="Co7-Bd-WmU" firstAttribute="trailing" secondItem="Svm-0b-xrc" secondAttribute="trailing" id="3Ns-5v-B6M"/>
                             <constraint firstItem="gef-M9-eep" firstAttribute="top" secondItem="J3j-Ph-MUH" secondAttribute="top" constant="-44" id="3hn-u1-EJP"/>
@@ -395,7 +395,7 @@
                             <constraint firstItem="Co7-Bd-WmU" firstAttribute="top" secondItem="f6d-JI-nww" secondAttribute="bottom" constant="8" symbolic="YES" id="A4p-id-nC9"/>
                             <constraint firstItem="J3j-Ph-MUH" firstAttribute="trailing" secondItem="JdM-Aq-Gb9" secondAttribute="trailing" constant="262" id="BGm-gj-Gwd"/>
                             <constraint firstAttribute="bottom" secondItem="A7o-lF-I5T" secondAttribute="bottom" constant="306" id="G2d-bQ-Ubk"/>
-                            <constraint firstItem="JdM-Aq-Gb9" firstAttribute="top" secondItem="Co7-Bd-WmU" secondAttribute="bottom" id="KCm-4Z-trq"/>
+                            <constraint firstItem="JdM-Aq-Gb9" firstAttribute="top" secondItem="Co7-Bd-WmU" secondAttribute="bottom" constant="-1" id="KCm-4Z-trq"/>
                             <constraint firstItem="J3j-Ph-MUH" firstAttribute="trailing" secondItem="3mj-sG-OLq" secondAttribute="trailing" constant="133" id="MF1-Q3-eg6"/>
                             <constraint firstItem="f6d-JI-nww" firstAttribute="top" secondItem="Zt4-IX-KZz" secondAttribute="top" constant="228" id="O4z-oG-BbY"/>
                             <constraint firstItem="JdM-Aq-Gb9" firstAttribute="bottom" secondItem="3mj-sG-OLq" secondAttribute="bottom" id="Om3-kw-cHj"/>
@@ -406,7 +406,7 @@
                             <constraint firstItem="Co7-Bd-WmU" firstAttribute="leading" secondItem="J3j-Ph-MUH" secondAttribute="leading" constant="19" id="aRD-5t-5Ek"/>
                             <constraint firstItem="Co7-Bd-WmU" firstAttribute="leading" secondItem="wwk-u4-6f7" secondAttribute="leading" id="cHQ-i2-FYV"/>
                             <constraint firstItem="JdM-Aq-Gb9" firstAttribute="leading" secondItem="f6d-JI-nww" secondAttribute="leading" id="ejn-XN-IOL"/>
-                            <constraint firstItem="Co7-Bd-WmU" firstAttribute="bottom" secondItem="Svm-0b-xrc" secondAttribute="bottom" id="emp-ZB-1nv"/>
+                            <constraint firstItem="Co7-Bd-WmU" firstAttribute="bottom" secondItem="Svm-0b-xrc" secondAttribute="bottom" constant="1" id="emp-ZB-1nv"/>
                             <constraint firstItem="Co7-Bd-WmU" firstAttribute="centerX" secondItem="A7o-lF-I5T" secondAttribute="centerX" id="hTa-5X-XnK"/>
                             <constraint firstItem="f6d-JI-nww" firstAttribute="leading" secondItem="Zt4-IX-KZz" secondAttribute="leadingMargin" id="l1X-YH-UcR"/>
                             <constraint firstItem="f6d-JI-nww" firstAttribute="top" secondItem="bPI-MT-4W7" secondAttribute="bottom" constant="8" symbolic="YES" id="mKE-xk-8sG"/>
@@ -436,7 +436,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
                             <color key="textColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -481,7 +481,7 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Omri Horowitz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6L8-1h-tLc">
                                             <rect key="frame" x="200" y="258" width="195" height="41"/>
-                                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="18"/>
                                             <color key="textColor" red="0.69585730917084787" green="0.54225029294396965" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -528,7 +528,7 @@
                         <color key="tintColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
                             <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -562,10 +562,9 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject Line" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfC-Q0-Rur">
                                             <rect key="frame" x="52" y="11" width="166" height="86"/>
-                                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
                                             <color key="textColor" red="0.47450977560000002" green="0.5411764979" blue="0.77647060160000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
-                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1e-fu-Kcp">
@@ -573,10 +572,9 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="126" id="4Hi-az-3pb"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="16"/>
                                             <color key="textColor" red="0.47450977560000002" green="0.5411764979" blue="0.77647060160000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
-                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a preview test of a message that might have been sent to a loving grandmother who I miss a lot..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwc-gk-4ou">
@@ -636,9 +634,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UVi-nq-hEo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" systemColor="separatorColor"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
                             <color key="textColor" red="0.74509805439999999" green="0.86274516580000005" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -664,12 +662,12 @@
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XzJ-da-obJ">
                                 <rect key="frame" x="116.5" y="88" width="181" height="32"/>
-                                <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Visual View"/>
                                     <segment title="List View"/>
                                 </segments>
-                                <color key="selectedSegmentTintColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="selectedSegmentTintColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rz2-GT-c6J"/>
@@ -701,101 +699,92 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group1" translatesAutoresizingMaskIntoConstraints="NO" id="4P5-te-1rW">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group3" translatesAutoresizingMaskIntoConstraints="NO" id="4P5-te-1rW">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                         </imageView>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Name here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-hu-F0W">
-                                            <rect key="frame" x="131" y="10" width="263" height="34"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Name here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-hu-F0W">
+                                            <rect key="frame" x="131" y="13" width="263" height="34"/>
                                             <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="34" id="BIy-bK-SbR"/>
-                                            </constraints>
                                             <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last in Touch:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40z-cV-Npu">
-                                            <rect key="frame" x="131" y="52" width="92" height="36"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last in Touch:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40z-cV-Npu">
+                                            <rect key="frame" x="131" y="55" width="92" height="36"/>
                                             <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="fu4-Ya-kc2"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="12"/>
-                                            <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
+                                            <color key="textColor" red="0.44606372570000002" green="0.50441736110000002" blue="0.73814315029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
-                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
-                                        <pickerView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="rx9-LZ-6dP">
-                                            <rect key="frame" x="231" y="52" width="163" height="36"/>
+                                        <pickerView contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rx9-LZ-6dP">
+                                            <rect key="frame" x="231" y="55" width="163" height="36"/>
                                             <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="tintColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="7PO-wr-rCb"/>
+                                                <constraint firstAttribute="width" constant="163" id="gBp-m5-79S"/>
+                                            </constraints>
                                         </pickerView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRZ-ee-x0s">
-                                            <rect key="frame" x="20" y="10" width="103" height="103"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRZ-ee-x0s">
+                                            <rect key="frame" x="20" y="13" width="103" height="103"/>
                                             <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                             <size key="titleShadowOffset" width="0.0" height="1"/>
                                             <state key="normal" title="Add Picture">
-                                                <color key="titleColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="titleShadowColor" systemColor="labelColor"/>
+                                                <color key="titleColor" red="0.44606372570000002" green="0.50441736110000002" blue="0.73814315029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMX-yE-LQv">
-                                            <rect key="frame" x="370" y="93" width="24" height="23"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="24" id="NvL-Xu-l4K"/>
-                                            </constraints>
-                                            <color key="tintColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <size key="titleShadowOffset" width="0.0" height="1"/>
-                                            <state key="normal" image="star" catalog="system">
-                                                <color key="titleColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </state>
-                                        </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite:      " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YP-bG-ig7">
-                                            <rect key="frame" x="305" y="96" width="61" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favorite:      " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YP-bG-ig7">
+                                            <rect key="frame" x="179" y="94" width="61" height="22"/>
                                             <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="61" id="iPZ-GA-uUP"/>
                                                 <constraint firstAttribute="height" constant="17" id="ny5-t1-ms6"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="12"/>
-                                            <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
+                                            <color key="textColor" red="0.44606372570000002" green="0.50441736110000002" blue="0.73814315029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
-                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMX-yE-LQv">
+                                            <rect key="frame" x="244" y="94" width="24" height="22"/>
+                                            <color key="tintColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <size key="titleShadowOffset" width="0.0" height="1"/>
+                                            <state key="normal" image="star" catalog="system">
+                                                <color key="titleColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="rx9-LZ-6dP" secondAttribute="trailing" constant="16" id="31e-AB-8k9"/>
                                         <constraint firstItem="8YP-bG-ig7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="40z-cV-Npu" secondAttribute="trailing" id="3Ff-2Q-AVj"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TRZ-ee-x0s" secondAttribute="trailing" constant="8" symbolic="YES" id="3Pt-P9-MZV"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="bottom" secondItem="TRZ-ee-x0s" secondAttribute="bottom" id="4tX-5z-yjB"/>
+                                        <constraint firstItem="40z-cV-Npu" firstAttribute="top" secondItem="4Oc-hu-F0W" secondAttribute="bottom" constant="5" id="6iq-r8-QLR"/>
                                         <constraint firstAttribute="bottom" secondItem="4P5-te-1rW" secondAttribute="bottom" id="7VI-FD-lMm"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="centerY" secondItem="IMX-yE-LQv" secondAttribute="centerY" id="7eC-OP-IAK"/>
-                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="top" secondItem="4Oc-hu-F0W" secondAttribute="bottom" constant="8" symbolic="YES" id="8Fd-JC-oSp"/>
-                                        <constraint firstItem="TRZ-ee-x0s" firstAttribute="leading" secondItem="56o-gp-E4R" secondAttribute="leading" constant="20" id="A5Z-U5-sig"/>
-                                        <constraint firstItem="4Oc-hu-F0W" firstAttribute="leading" secondItem="40z-cV-Npu" secondAttribute="leading" id="B6g-e4-DnW"/>
-                                        <constraint firstItem="4Oc-hu-F0W" firstAttribute="top" secondItem="56o-gp-E4R" secondAttribute="topMargin" constant="-1" id="DIQ-KJ-5nD"/>
-                                        <constraint firstItem="4Oc-hu-F0W" firstAttribute="trailing" secondItem="56o-gp-E4R" secondAttribute="trailingMargin" id="FCU-8B-3GA"/>
-                                        <constraint firstItem="4Oc-hu-F0W" firstAttribute="top" secondItem="TRZ-ee-x0s" secondAttribute="top" id="I55-zA-m3h"/>
-                                        <constraint firstItem="IMX-yE-LQv" firstAttribute="top" secondItem="rx9-LZ-6dP" secondAttribute="bottom" constant="5" id="IbJ-Gs-ZTf"/>
+                                        <constraint firstItem="40z-cV-Npu" firstAttribute="leading" secondItem="TRZ-ee-x0s" secondAttribute="trailing" constant="8" symbolic="YES" id="8Ee-TX-CdN"/>
+                                        <constraint firstItem="4Oc-hu-F0W" firstAttribute="leading" secondItem="40z-cV-Npu" secondAttribute="leading" constant="-1" id="B6g-e4-DnW"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="IMX-yE-LQv" secondAttribute="trailing" constant="17" id="CC9-uz-Pbu"/>
+                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="trailing" secondItem="4Oc-hu-F0W" secondAttribute="trailing" id="ESa-RA-Qlk"/>
+                                        <constraint firstItem="TRZ-ee-x0s" firstAttribute="top" secondItem="4Oc-hu-F0W" secondAttribute="top" id="HcJ-5F-oQX"/>
+                                        <constraint firstItem="IMX-yE-LQv" firstAttribute="leading" secondItem="8YP-bG-ig7" secondAttribute="trailing" constant="8" symbolic="YES" id="IdA-dJ-rmq"/>
                                         <constraint firstItem="8YP-bG-ig7" firstAttribute="leading" secondItem="56o-gp-E4R" secondAttribute="leading" constant="305" id="J7M-l2-w4Y"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="leading" secondItem="TRZ-ee-x0s" secondAttribute="trailing" constant="182" id="JWf-mt-1Dv"/>
                                         <constraint firstItem="4P5-te-1rW" firstAttribute="top" secondItem="56o-gp-E4R" secondAttribute="top" id="LSj-Ub-Swy"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="8YP-bG-ig7" secondAttribute="bottom" constant="76" id="MoW-le-TUx"/>
-                                        <constraint firstItem="4Oc-hu-F0W" firstAttribute="trailing" secondItem="rx9-LZ-6dP" secondAttribute="trailing" id="PwN-sp-gls"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TRZ-ee-x0s" secondAttribute="trailing" constant="8" symbolic="YES" id="XPI-Ew-Hag"/>
-                                        <constraint firstItem="40z-cV-Npu" firstAttribute="leading" secondItem="TRZ-ee-x0s" secondAttribute="trailing" constant="8" id="ZaN-Qu-si8"/>
-                                        <constraint firstItem="40z-cV-Npu" firstAttribute="bottom" secondItem="rx9-LZ-6dP" secondAttribute="bottom" id="Zar-FC-bC2"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="top" secondItem="40z-cV-Npu" secondAttribute="bottom" constant="8" symbolic="YES" id="dHz-Fh-14J"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="IMX-yE-LQv" secondAttribute="bottom" constant="86" id="M5N-tD-Dmk"/>
+                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="centerY" secondItem="IMX-yE-LQv" secondAttribute="centerY" id="Tnl-gP-FvJ"/>
+                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="top" secondItem="40z-cV-Npu" secondAttribute="bottom" constant="4" id="dHz-Fh-14J"/>
                                         <constraint firstItem="4P5-te-1rW" firstAttribute="leading" secondItem="56o-gp-E4R" secondAttribute="leading" id="eNq-zM-vur"/>
                                         <constraint firstAttribute="trailing" secondItem="4P5-te-1rW" secondAttribute="trailing" id="eeX-GO-54n"/>
-                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="leading" secondItem="40z-cV-Npu" secondAttribute="trailing" constant="8" symbolic="YES" id="k9K-ID-SqX"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TRZ-ee-x0s" secondAttribute="trailing" constant="8" symbolic="YES" id="mSk-HT-OQP"/>
-                                        <constraint firstItem="40z-cV-Npu" firstAttribute="top" secondItem="4Oc-hu-F0W" secondAttribute="bottom" constant="8" symbolic="YES" id="muD-Rc-ltr"/>
-                                        <constraint firstItem="40z-cV-Npu" firstAttribute="trailing" secondItem="8YP-bG-ig7" secondAttribute="trailing" constant="-143" id="vPG-Va-xAD"/>
-                                        <constraint firstItem="IMX-yE-LQv" firstAttribute="leading" secondItem="8YP-bG-ig7" secondAttribute="trailing" constant="4" id="xTW-lK-SBj"/>
+                                        <constraint firstItem="40z-cV-Npu" firstAttribute="top" secondItem="rx9-LZ-6dP" secondAttribute="top" id="jUw-oK-rDa"/>
+                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="leading" secondItem="40z-cV-Npu" secondAttribute="trailing" constant="7" id="msr-bv-R3S"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TRZ-ee-x0s" secondAttribute="bottom" constant="81" id="tFt-hC-1um"/>
+                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="bottom" secondItem="40z-cV-Npu" secondAttribute="bottom" id="upq-ig-E2D"/>
+                                        <constraint firstItem="40z-cV-Npu" firstAttribute="trailing" secondItem="8YP-bG-ig7" secondAttribute="trailing" constant="-137" id="vPG-Va-xAD"/>
+                                        <constraint firstItem="TRZ-ee-x0s" firstAttribute="leading" secondItem="56o-gp-E4R" secondAttribute="leadingMargin" constant="-15" id="vXZ-TF-EhJ"/>
+                                        <constraint firstItem="IMX-yE-LQv" firstAttribute="top" secondItem="8YP-bG-ig7" secondAttribute="top" id="vZi-jp-hYp"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -825,12 +814,12 @@
         <image name="circles.hexagongrid" catalog="system" width="128" height="112"/>
         <image name="circles.hexagongrid.fill" catalog="system" width="128" height="112"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
-        <image name="galaxy2" width="3264" height="4894"/>
-        <image name="group1" width="4896" height="3264"/>
+        <image name="galaxy2" width="1220" height="1829"/>
+        <image name="group3" width="1220" height="813"/>
         <image name="lightbulb" catalog="system" width="113" height="128"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <image name="messagebackground" width="6016" height="4016"/>
-        <image name="messagebackground2" width="3197" height="4848"/>
+        <image name="messagecomposer1" width="1207" height="1830"/>
         <image name="mic.fill" catalog="system" width="108" height="128"/>
         <image name="paperclip.circle" catalog="system" width="128" height="121"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
@@ -841,6 +830,9 @@
         <image name="video.fill" catalog="system" width="128" height="82"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
