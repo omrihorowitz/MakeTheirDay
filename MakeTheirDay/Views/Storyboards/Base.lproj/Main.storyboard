@@ -39,15 +39,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="galaxy2" translatesAutoresizingMaskIntoConstraints="NO" id="1mh-KU-Rt0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy2" translatesAutoresizingMaskIntoConstraints="NO" id="1mh-KU-Rt0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2R-bv-fgx">
-                                <rect key="frame" x="143" y="313" width="123" height="110"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2R-bv-fgx">
+                                <rect key="frame" x="143" y="313" width="128" height="110"/>
                                 <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="l2R-bv-fgx" secondAttribute="height" multiplier="1:1" id="d1Y-ZT-t2C"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="127" id="WKp-c5-YhE"/>
+                                    <constraint firstAttribute="height" constant="110" id="yEz-bq-66Q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                 <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -57,50 +57,22 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BI-uv-hVm">
-                                <rect key="frame" x="291" y="190" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="8BI-uv-hVm" secondAttribute="height" multiplier="1:1" id="BY1-YF-ucF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
-                                <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="Add Picture">
-                                    <color key="titleColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-4M-NW9">
-                                <rect key="frame" x="154" y="500" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Pby-4M-NW9" secondAttribute="height" multiplier="1:1" id="BTB-ne-dtd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
-                                <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="Add Picture">
-                                    <color key="titleColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5y-8w-BtC">
-                                <rect key="frame" x="17" y="431" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Z5y-8w-BtC" secondAttribute="height" multiplier="1:1" id="9ty-Id-KeM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
-                                <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="Add Picture">
-                                    <color key="titleColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN1-lL-Zni">
-                                <rect key="frame" x="10" y="190" width="101" height="100"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTk-Up-Ou8">
+                                <rect key="frame" x="17" y="298" width="100" height="34"/>
+                                <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJv-fo-IjM">
+                                <rect key="frame" x="143" y="431" width="128" height="34"/>
+                                <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN1-lL-Zni">
+                                <rect key="frame" x="17" y="190" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="OcW-m1-dft"/>
@@ -114,12 +86,18 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUE-42-J9E">
-                                <rect key="frame" x="154" y="121" width="100" height="100"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xkx-lo-Oi4">
+                                <rect key="frame" x="294" y="298" width="100" height="34"/>
+                                <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJx-5q-Y5h">
+                                <rect key="frame" x="294" y="190" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Iet-oK-29H"/>
-                                    <constraint firstAttribute="width" secondItem="XUE-42-J9E" secondAttribute="height" multiplier="1:1" id="oKi-HJ-xzg"/>
+                                    <constraint firstAttribute="height" constant="100" id="45W-0N-yC4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                 <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -129,11 +107,19 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWG-YZ-RNR">
-                                <rect key="frame" x="291" y="431" width="100" height="100"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIQ-bO-Trd">
+                                <rect key="frame" x="157" y="243" width="100" height="34"/>
+                                <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2u7-E5-l8M">
+                                <rect key="frame" x="157" y="135" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="xWG-YZ-RNR" secondAttribute="height" multiplier="1:1" id="b14-d5-ytC"/>
+                                    <constraint firstAttribute="width" secondItem="2u7-E5-l8M" secondAttribute="height" multiplier="1:1" id="Lnm-im-ZmW"/>
+                                    <constraint firstAttribute="height" constant="100" id="Oh0-SX-yMB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
                                 <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -143,101 +129,124 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTk-Up-Ou8">
-                                <rect key="frame" x="10" y="298" width="101" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3Q-pb-EXV">
+                                <rect key="frame" x="18" y="564" width="100" height="34"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3Q-bS-ng8">
-                                <rect key="frame" x="154" y="229" width="101" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCC-K9-Lns">
+                                <rect key="frame" x="18" y="456" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qCC-K9-Lns" secondAttribute="height" multiplier="1:1" id="YfJ-tT-Oi3"/>
+                                    <constraint firstAttribute="height" constant="100" id="wi3-J3-FMO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
+                                <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Add Picture">
+                                    <color key="titleColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oW8-Rb-g5F">
+                                <rect key="frame" x="157" y="610" width="100" height="34"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="knt-jR-B4S">
-                                <rect key="frame" x="290" y="298" width="101" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUN-EN-BQr">
+                                <rect key="frame" x="157" y="502" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Cfn-XI-uDH"/>
+                                    <constraint firstAttribute="width" secondItem="RUN-EN-BQr" secondAttribute="height" multiplier="1:1" id="uBL-dU-uqm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
+                                <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Add Picture">
+                                    <color key="titleColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4WL-ie-xqu">
+                                <rect key="frame" x="294" y="564" width="100" height="34"/>
                                 <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CvL-3s-FJe">
-                                <rect key="frame" x="290" y="539" width="101" height="34"/>
-                                <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHE-1e-hFu">
-                                <rect key="frame" x="154" y="608" width="101" height="34"/>
-                                <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAh-BW-yh1">
-                                <rect key="frame" x="17" y="539" width="101" height="34"/>
-                                <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contact Name..." borderStyle="roundedRect" placeholder="Contact Name Here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJv-fo-IjM">
-                                <rect key="frame" x="143" y="431" width="123" height="34"/>
-                                <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="10"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcQ-8X-CN7">
+                                <rect key="frame" x="294" y="456" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IcQ-8X-CN7" secondAttribute="height" multiplier="1:1" id="QEZ-Sk-nmX"/>
+                                    <constraint firstAttribute="height" constant="100" id="f7p-e0-xQR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
+                                <color key="tintColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Add Picture">
+                                    <color key="titleColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j8M-xB-EjW"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="top" secondItem="TuN-wX-zo7" secondAttribute="top" constant="431" id="0D4-C0-vho"/>
-                            <constraint firstItem="l2R-bv-fgx" firstAttribute="leading" secondItem="qJv-fo-IjM" secondAttribute="leading" id="1nC-WZ-IrU"/>
-                            <constraint firstItem="JHE-1e-hFu" firstAttribute="top" secondItem="Pby-4M-NW9" secondAttribute="bottom" constant="8" symbolic="YES" id="1rj-aY-ksc"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="top" secondItem="knt-jR-B4S" secondAttribute="bottom" constant="99" id="2eV-KK-Ihv"/>
-                            <constraint firstItem="j8M-xB-EjW" firstAttribute="trailing" secondItem="xWG-YZ-RNR" secondAttribute="trailing" constant="23" id="43K-1s-aFs"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="trailing" secondItem="CvL-3s-FJe" secondAttribute="trailing" id="4g0-3H-d8v"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="centerX" secondItem="I3Q-bS-ng8" secondAttribute="centerX" id="692-rC-xtO"/>
-                            <constraint firstItem="BTk-Up-Ou8" firstAttribute="baseline" secondItem="knt-jR-B4S" secondAttribute="baseline" id="7SF-RW-iJl"/>
-                            <constraint firstItem="CvL-3s-FJe" firstAttribute="top" secondItem="xWG-YZ-RNR" secondAttribute="bottom" constant="8" symbolic="YES" id="AwW-Qs-u9E"/>
-                            <constraint firstItem="l2R-bv-fgx" firstAttribute="top" secondItem="I3Q-bS-ng8" secondAttribute="bottom" constant="50" id="BBB-Wm-Jma"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="leading" secondItem="TuN-wX-zo7" secondAttribute="leading" constant="154" id="BF2-KN-a8L"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="top" secondItem="Z5y-8w-BtC" secondAttribute="top" id="BpG-pX-mxx"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="trailing" secondItem="Pby-4M-NW9" secondAttribute="trailing" id="C8d-ic-3nh"/>
-                            <constraint firstItem="JAh-BW-yh1" firstAttribute="top" secondItem="Z5y-8w-BtC" secondAttribute="bottom" constant="8" symbolic="YES" id="D2g-tE-3Ob"/>
-                            <constraint firstItem="BTk-Up-Ou8" firstAttribute="leading" secondItem="FN1-lL-Zni" secondAttribute="leading" id="GvM-VU-6OZ"/>
-                            <constraint firstItem="I3Q-bS-ng8" firstAttribute="top" secondItem="XUE-42-J9E" secondAttribute="bottom" constant="8" symbolic="YES" id="HgB-uW-TTt"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="leading" secondItem="Pby-4M-NW9" secondAttribute="leading" id="I3T-LM-Dig"/>
-                            <constraint firstItem="8BI-uv-hVm" firstAttribute="baseline" secondItem="FN1-lL-Zni" secondAttribute="baseline" id="JAw-dE-nbC"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="leading" secondItem="JHE-1e-hFu" secondAttribute="leading" id="JeS-9c-qY2"/>
-                            <constraint firstItem="j8M-xB-EjW" firstAttribute="bottom" secondItem="JHE-1e-hFu" secondAttribute="bottom" constant="220" id="Jr7-XH-Glv"/>
-                            <constraint firstItem="8BI-uv-hVm" firstAttribute="leading" secondItem="XUE-42-J9E" secondAttribute="trailing" constant="37" id="Jwp-TZ-nGG"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="centerX" secondItem="CvL-3s-FJe" secondAttribute="centerX" id="Ktg-1x-hEz"/>
-                            <constraint firstItem="l2R-bv-fgx" firstAttribute="leading" secondItem="BTk-Up-Ou8" secondAttribute="trailing" constant="32" id="LD3-Nn-LEO"/>
-                            <constraint firstItem="Z5y-8w-BtC" firstAttribute="leading" secondItem="j8M-xB-EjW" secondAttribute="leading" constant="17" id="LfW-n2-a9I"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="top" secondItem="j8M-xB-EjW" secondAttribute="top" constant="77" id="MGf-Tv-Wlw"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="centerX" secondItem="JHE-1e-hFu" secondAttribute="centerX" id="MOM-R3-VzP"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="leading" secondItem="I3Q-bS-ng8" secondAttribute="leading" id="NIw-4m-0dl"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="trailing" secondItem="knt-jR-B4S" secondAttribute="trailing" id="TxZ-T8-3if"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="leading" secondItem="qJv-fo-IjM" secondAttribute="trailing" constant="25" id="VZY-iQ-mni"/>
-                            <constraint firstItem="Z5y-8w-BtC" firstAttribute="leading" secondItem="JAh-BW-yh1" secondAttribute="leading" id="YvZ-ia-QrC"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="centerX" secondItem="l2R-bv-fgx" secondAttribute="centerX" id="aSw-Ht-tyJ"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="centerX" secondItem="knt-jR-B4S" secondAttribute="centerX" id="bfF-dD-FcP"/>
-                            <constraint firstItem="Z5y-8w-BtC" firstAttribute="centerX" secondItem="JAh-BW-yh1" secondAttribute="centerX" id="dty-ej-vf0"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="firstBaseline" secondItem="Z5y-8w-BtC" secondAttribute="firstBaseline" id="e2W-Tp-hc9"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="leading" secondItem="8BI-uv-hVm" secondAttribute="leading" id="fxL-AL-Vlh"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="baseline" secondItem="Z5y-8w-BtC" secondAttribute="baseline" id="je3-C4-y0w"/>
-                            <constraint firstItem="qJv-fo-IjM" firstAttribute="top" secondItem="l2R-bv-fgx" secondAttribute="bottom" constant="8" symbolic="YES" id="kKX-Tq-nTw"/>
-                            <constraint firstItem="BTk-Up-Ou8" firstAttribute="top" secondItem="FN1-lL-Zni" secondAttribute="bottom" constant="8" symbolic="YES" id="mjb-bl-37G"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="top" secondItem="qJv-fo-IjM" secondAttribute="top" id="rKY-Hi-ts5"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="leading" secondItem="FN1-lL-Zni" secondAttribute="trailing" constant="40" id="sX2-Lc-s6f"/>
-                            <constraint firstItem="xWG-YZ-RNR" firstAttribute="trailing" secondItem="8BI-uv-hVm" secondAttribute="trailing" id="wcw-Gp-AT7"/>
-                            <constraint firstItem="XUE-42-J9E" firstAttribute="centerX" secondItem="qJv-fo-IjM" secondAttribute="centerX" id="xlv-z6-ImV"/>
+                            <constraint firstItem="I3Q-pb-EXV" firstAttribute="leading" secondItem="qCC-K9-Lns" secondAttribute="leading" id="1wx-F0-eDI"/>
+                            <constraint firstItem="BTk-Up-Ou8" firstAttribute="top" secondItem="FN1-lL-Zni" secondAttribute="bottom" constant="8" symbolic="YES" id="2w0-WF-DmR"/>
+                            <constraint firstItem="GJx-5q-Y5h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2u7-E5-l8M" secondAttribute="trailing" id="4CD-hP-xt1"/>
+                            <constraint firstItem="2u7-E5-l8M" firstAttribute="centerX" secondItem="TuN-wX-zo7" secondAttribute="centerX" id="5KJ-x9-klZ"/>
+                            <constraint firstItem="2u7-E5-l8M" firstAttribute="width" secondItem="2u7-E5-l8M" secondAttribute="height" multiplier="1:1" id="5kB-se-VbI"/>
+                            <constraint firstItem="j8M-xB-EjW" firstAttribute="bottom" secondItem="I3Q-pb-EXV" secondAttribute="bottom" constant="264" id="61B-RB-t3K"/>
+                            <constraint firstItem="qJv-fo-IjM" firstAttribute="leading" secondItem="qCC-K9-Lns" secondAttribute="trailing" constant="25" id="8J0-0g-r0N"/>
+                            <constraint firstItem="IcQ-8X-CN7" firstAttribute="width" secondItem="IcQ-8X-CN7" secondAttribute="height" multiplier="1:1" id="A4s-pX-4dO"/>
+                            <constraint firstItem="2u7-E5-l8M" firstAttribute="top" secondItem="j8M-xB-EjW" secondAttribute="top" constant="91" id="AXA-Kg-5dY"/>
+                            <constraint firstItem="RUN-EN-BQr" firstAttribute="trailing" secondItem="TIQ-bO-Trd" secondAttribute="trailing" id="DUw-Hi-nkB"/>
+                            <constraint firstItem="FN1-lL-Zni" firstAttribute="baseline" secondItem="GJx-5q-Y5h" secondAttribute="baseline" id="Edx-nG-6EB"/>
+                            <constraint firstItem="1mh-KU-Rt0" firstAttribute="top" secondItem="TuN-wX-zo7" secondAttribute="top" id="Fmi-rn-EMM"/>
+                            <constraint firstItem="RUN-EN-BQr" firstAttribute="leading" secondItem="2u7-E5-l8M" secondAttribute="leading" id="GhP-1v-xxc"/>
+                            <constraint firstItem="BTk-Up-Ou8" firstAttribute="trailing" secondItem="FN1-lL-Zni" secondAttribute="trailing" id="GwA-31-qnz"/>
+                            <constraint firstItem="l2R-bv-fgx" firstAttribute="centerX" secondItem="2u7-E5-l8M" secondAttribute="centerX" id="J7P-FT-ImZ"/>
+                            <constraint firstItem="RUN-EN-BQr" firstAttribute="top" secondItem="qJv-fo-IjM" secondAttribute="bottom" constant="37" id="KIe-Wk-Ttz"/>
+                            <constraint firstItem="qCC-K9-Lns" firstAttribute="width" secondItem="qCC-K9-Lns" secondAttribute="height" multiplier="1:1" id="OC6-lX-8NL"/>
+                            <constraint firstItem="Xkx-lo-Oi4" firstAttribute="trailing" secondItem="GJx-5q-Y5h" secondAttribute="trailing" id="PHY-aW-MMN"/>
+                            <constraint firstItem="Xkx-lo-Oi4" firstAttribute="leading" secondItem="GJx-5q-Y5h" secondAttribute="leading" id="PKK-01-byC"/>
+                            <constraint firstItem="FN1-lL-Zni" firstAttribute="leading" secondItem="j8M-xB-EjW" secondAttribute="leading" constant="17" id="QB7-j0-eb4"/>
+                            <constraint firstItem="oW8-Rb-g5F" firstAttribute="leading" secondItem="RUN-EN-BQr" secondAttribute="leading" id="RRg-Dm-bTR"/>
+                            <constraint firstItem="IcQ-8X-CN7" firstAttribute="width" secondItem="IcQ-8X-CN7" secondAttribute="height" multiplier="1:1" id="RSl-xF-Nfg"/>
+                            <constraint firstAttribute="bottom" secondItem="1mh-KU-Rt0" secondAttribute="bottom" id="U86-Bh-pj8"/>
+                            <constraint firstItem="I3Q-pb-EXV" firstAttribute="trailing" secondItem="qCC-K9-Lns" secondAttribute="trailing" id="UF1-Wh-p0e"/>
+                            <constraint firstItem="oW8-Rb-g5F" firstAttribute="trailing" secondItem="RUN-EN-BQr" secondAttribute="trailing" id="X7a-sw-xjw"/>
+                            <constraint firstItem="4WL-ie-xqu" firstAttribute="trailing" secondItem="IcQ-8X-CN7" secondAttribute="trailing" id="XPi-Us-bkT"/>
+                            <constraint firstItem="qCC-K9-Lns" firstAttribute="baseline" secondItem="IcQ-8X-CN7" secondAttribute="baseline" id="XfP-XX-zuy"/>
+                            <constraint firstItem="4WL-ie-xqu" firstAttribute="leading" secondItem="RUN-EN-BQr" secondAttribute="trailing" constant="37" id="b1r-zH-KuM"/>
+                            <constraint firstItem="BTk-Up-Ou8" firstAttribute="leading" secondItem="FN1-lL-Zni" secondAttribute="leading" id="ccz-Sa-rKZ"/>
+                            <constraint firstItem="oW8-Rb-g5F" firstAttribute="top" secondItem="RUN-EN-BQr" secondAttribute="bottom" constant="8" symbolic="YES" id="en5-sb-6iM"/>
+                            <constraint firstItem="qJv-fo-IjM" firstAttribute="leading" secondItem="l2R-bv-fgx" secondAttribute="leading" id="fDZ-17-wgn"/>
+                            <constraint firstItem="FN1-lL-Zni" firstAttribute="top" secondItem="j8M-xB-EjW" secondAttribute="top" constant="146" id="fOs-AK-Kg1"/>
+                            <constraint firstItem="TIQ-bO-Trd" firstAttribute="top" secondItem="2u7-E5-l8M" secondAttribute="bottom" constant="8" symbolic="YES" id="gZV-h5-HVe"/>
+                            <constraint firstItem="RUN-EN-BQr" firstAttribute="width" secondItem="RUN-EN-BQr" secondAttribute="height" multiplier="1:1" id="hML-kf-9GO"/>
+                            <constraint firstItem="RUN-EN-BQr" firstAttribute="width" secondItem="RUN-EN-BQr" secondAttribute="height" multiplier="1:1" id="hzp-Wv-wed"/>
+                            <constraint firstItem="Xkx-lo-Oi4" firstAttribute="top" secondItem="GJx-5q-Y5h" secondAttribute="bottom" constant="8" symbolic="YES" id="ihm-w8-ako"/>
+                            <constraint firstItem="qJv-fo-IjM" firstAttribute="top" secondItem="l2R-bv-fgx" secondAttribute="bottom" constant="8" symbolic="YES" id="kBr-YU-7Ur"/>
+                            <constraint firstItem="qJv-fo-IjM" firstAttribute="centerX" secondItem="l2R-bv-fgx" secondAttribute="centerX" id="kKW-bZ-0HW"/>
+                            <constraint firstItem="I3Q-pb-EXV" firstAttribute="top" secondItem="qCC-K9-Lns" secondAttribute="bottom" constant="8" symbolic="YES" id="kej-da-A5H"/>
+                            <constraint firstItem="4WL-ie-xqu" firstAttribute="leading" secondItem="IcQ-8X-CN7" secondAttribute="leading" id="mYp-fE-UmQ"/>
+                            <constraint firstItem="l2R-bv-fgx" firstAttribute="top" secondItem="TIQ-bO-Trd" secondAttribute="bottom" constant="36" id="oNQ-Jp-9aq"/>
+                            <constraint firstItem="1mh-KU-Rt0" firstAttribute="leading" secondItem="TuN-wX-zo7" secondAttribute="leading" id="s4m-bQ-ZPj"/>
+                            <constraint firstItem="qCC-K9-Lns" firstAttribute="leading" secondItem="j8M-xB-EjW" secondAttribute="leading" constant="18" id="tx9-uS-YxH"/>
+                            <constraint firstItem="IcQ-8X-CN7" firstAttribute="leading" secondItem="Xkx-lo-Oi4" secondAttribute="leading" id="vLA-Ct-tTz"/>
+                            <constraint firstItem="4WL-ie-xqu" firstAttribute="top" secondItem="IcQ-8X-CN7" secondAttribute="bottom" constant="8" symbolic="YES" id="wjr-dS-nQD"/>
+                            <constraint firstItem="2u7-E5-l8M" firstAttribute="centerX" secondItem="1mh-KU-Rt0" secondAttribute="centerX" id="xQI-c9-NyJ"/>
+                            <constraint firstItem="GJx-5q-Y5h" firstAttribute="width" secondItem="GJx-5q-Y5h" secondAttribute="height" multiplier="1:1" id="yg4-ZM-OUG"/>
+                            <constraint firstItem="l2R-bv-fgx" firstAttribute="centerX" secondItem="TIQ-bO-Trd" secondAttribute="centerX" id="zqz-eh-E9i"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ttu-qx-4xc"/>
@@ -458,7 +467,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="300" id="rWe-DW-IrG" customClass="InspirationPostTableViewCell" customModule="MakeTheirDay" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="inspirationPostCell" rowHeight="300" id="rWe-DW-IrG" customClass="InspirationPostTableViewCell" customModule="MakeTheirDay" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rWe-DW-IrG" id="ymL-oi-4uc">
@@ -480,7 +489,7 @@
                                             <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Omri Horowitz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6L8-1h-tLc">
-                                            <rect key="frame" x="200" y="258" width="195" height="41"/>
+                                            <rect key="frame" x="200" y="258" width="133.5" height="41"/>
                                             <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="18"/>
                                             <color key="textColor" red="0.69585730917084787" green="0.54225029294396965" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
@@ -489,17 +498,17 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="6L8-1h-tLc" secondAttribute="trailing" constant="80.5" id="0xc-nc-cY6"/>
                                         <constraint firstAttribute="trailing" secondItem="0bd-yy-VMH" secondAttribute="trailing" id="6ly-rh-GC0"/>
                                         <constraint firstItem="nmY-Bc-yBa" firstAttribute="leading" secondItem="ymL-oi-4uc" secondAttribute="leadingMargin" id="EGy-OE-ipx"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="6L8-1h-tLc" secondAttribute="bottom" constant="-10" id="H3I-Cb-wzd"/>
                                         <constraint firstItem="0bd-yy-VMH" firstAttribute="leading" secondItem="ymL-oi-4uc" secondAttribute="leading" id="Hd8-mT-tk2"/>
                                         <constraint firstItem="0bd-yy-VMH" firstAttribute="top" secondItem="ymL-oi-4uc" secondAttribute="top" id="ON9-qO-uLA"/>
-                                        <constraint firstItem="6L8-1h-tLc" firstAttribute="leading" secondItem="nmY-Bc-yBa" secondAttribute="leading" multiplier="10" id="RC1-Ka-N1d"/>
                                         <constraint firstAttribute="bottom" secondItem="0bd-yy-VMH" secondAttribute="bottom" id="VOU-MB-8Et"/>
-                                        <constraint firstItem="6L8-1h-tLc" firstAttribute="trailing" secondItem="nmY-Bc-yBa" secondAttribute="trailing" constant="1" id="Zew-jx-Lkm"/>
                                         <constraint firstItem="nmY-Bc-yBa" firstAttribute="top" secondItem="ymL-oi-4uc" secondAttribute="topMargin" id="baL-ui-H6L"/>
                                         <constraint firstItem="nmY-Bc-yBa" firstAttribute="centerX" secondItem="0bd-yy-VMH" secondAttribute="centerX" id="igs-6y-hid"/>
                                         <constraint firstItem="6L8-1h-tLc" firstAttribute="height" secondItem="nmY-Bc-yBa" secondAttribute="height" multiplier="0.058" constant="26.5" id="sbq-7Q-Tpw"/>
+                                        <constraint firstItem="6L8-1h-tLc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ymL-oi-4uc" secondAttribute="leading" constant="20" symbolic="YES" id="zaK-r1-Dwo"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -550,7 +559,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="CzC-Yc-ADy" customClass="MessageTableViewCell" customModule="MakeTheirDay" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="previewMessageCell" rowHeight="200" id="CzC-Yc-ADy" customClass="MessageTableViewCell" customModule="MakeTheirDay" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CzC-Yc-ADy" id="4LT-pl-hq9">
@@ -692,7 +701,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.69019609689999994" green="0.53333336109999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="IKj-yY-57Z" customClass="ContactTableViewCell" customModule="MakeTheirDay" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" rowHeight="200" id="IKj-yY-57Z" customClass="ContactTableViewCell" customModule="MakeTheirDay" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IKj-yY-57Z" id="56o-gp-E4R">
@@ -702,34 +711,33 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group3" translatesAutoresizingMaskIntoConstraints="NO" id="4P5-te-1rW">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                         </imageView>
-                                        <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Name here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-hu-F0W">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Name here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-hu-F0W">
                                             <rect key="frame" x="131" y="13" width="263" height="34"/>
                                             <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="textColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last in Touch:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40z-cV-Npu">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last in Touch:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40z-cV-Npu">
                                             <rect key="frame" x="131" y="55" width="92" height="36"/>
                                             <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="fu4-Ya-kc2"/>
+                                                <constraint firstAttribute="height" constant="36" id="lwH-of-snR"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
                                             <color key="textColor" red="0.44606372570000002" green="0.50441736110000002" blue="0.73814315029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
-                                        <pickerView contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rx9-LZ-6dP">
+                                        <pickerView contentMode="scaleAspectFit" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="rx9-LZ-6dP">
                                             <rect key="frame" x="231" y="55" width="163" height="36"/>
                                             <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="tintColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="36" id="7PO-wr-rCb"/>
-                                                <constraint firstAttribute="width" constant="163" id="gBp-m5-79S"/>
+                                                <constraint firstAttribute="width" constant="163" id="VI0-eh-siE"/>
                                             </constraints>
                                         </pickerView>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRZ-ee-x0s">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRZ-ee-x0s">
                                             <rect key="frame" x="20" y="13" width="103" height="103"/>
                                             <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
@@ -738,20 +746,19 @@
                                                 <color key="titleColor" red="0.44606372570000002" green="0.50441736110000002" blue="0.73814315029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </state>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favorite:      " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YP-bG-ig7">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite:      " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YP-bG-ig7">
                                             <rect key="frame" x="179" y="94" width="61" height="22"/>
                                             <color key="backgroundColor" red="0.85490196939999996" green="0.62352943419999995" blue="0.97647058959999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="61" id="iPZ-GA-uUP"/>
-                                                <constraint firstAttribute="height" constant="17" id="ny5-t1-ms6"/>
-                                            </constraints>
                                             <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="12"/>
                                             <color key="textColor" red="0.44606372570000002" green="0.50441736110000002" blue="0.73814315029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMX-yE-LQv">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMX-yE-LQv">
                                             <rect key="frame" x="244" y="94" width="24" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="24" id="lbr-f8-FLs"/>
+                                            </constraints>
                                             <color key="tintColor" red="0.59607845540000004" green="0.67450982329999998" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <size key="titleShadowOffset" width="0.0" height="1"/>
                                             <state key="normal" image="star" catalog="system">
@@ -761,30 +768,30 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="rx9-LZ-6dP" secondAttribute="trailing" constant="16" id="31e-AB-8k9"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="40z-cV-Npu" secondAttribute="trailing" id="3Ff-2Q-AVj"/>
-                                        <constraint firstItem="40z-cV-Npu" firstAttribute="top" secondItem="4Oc-hu-F0W" secondAttribute="bottom" constant="5" id="6iq-r8-QLR"/>
+                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="trailing" secondItem="4Oc-hu-F0W" secondAttribute="trailing" id="4ic-Jv-kjV"/>
                                         <constraint firstAttribute="bottom" secondItem="4P5-te-1rW" secondAttribute="bottom" id="7VI-FD-lMm"/>
-                                        <constraint firstItem="40z-cV-Npu" firstAttribute="leading" secondItem="TRZ-ee-x0s" secondAttribute="trailing" constant="8" symbolic="YES" id="8Ee-TX-CdN"/>
-                                        <constraint firstItem="4Oc-hu-F0W" firstAttribute="leading" secondItem="40z-cV-Npu" secondAttribute="leading" constant="-1" id="B6g-e4-DnW"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="IMX-yE-LQv" secondAttribute="trailing" constant="17" id="CC9-uz-Pbu"/>
-                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="trailing" secondItem="4Oc-hu-F0W" secondAttribute="trailing" id="ESa-RA-Qlk"/>
-                                        <constraint firstItem="TRZ-ee-x0s" firstAttribute="top" secondItem="4Oc-hu-F0W" secondAttribute="top" id="HcJ-5F-oQX"/>
-                                        <constraint firstItem="IMX-yE-LQv" firstAttribute="leading" secondItem="8YP-bG-ig7" secondAttribute="trailing" constant="8" symbolic="YES" id="IdA-dJ-rmq"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="leading" secondItem="56o-gp-E4R" secondAttribute="leading" constant="305" id="J7M-l2-w4Y"/>
+                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="bottom" secondItem="IMX-yE-LQv" secondAttribute="bottom" id="90e-WA-s5W"/>
+                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="top" secondItem="40z-cV-Npu" secondAttribute="top" id="BgH-15-KUs"/>
+                                        <constraint firstItem="TRZ-ee-x0s" firstAttribute="top" secondItem="56o-gp-E4R" secondAttribute="topMargin" constant="2" id="CE8-9I-S2a"/>
+                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="leading" secondItem="40z-cV-Npu" secondAttribute="trailing" constant="8" symbolic="YES" id="Cbn-la-ww5"/>
+                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="leading" secondItem="TRZ-ee-x0s" secondAttribute="trailing" constant="56" id="DhJ-lZ-wtY"/>
+                                        <constraint firstItem="40z-cV-Npu" firstAttribute="top" secondItem="4Oc-hu-F0W" secondAttribute="bottom" constant="8" symbolic="YES" id="FAm-KL-4qd"/>
                                         <constraint firstItem="4P5-te-1rW" firstAttribute="top" secondItem="56o-gp-E4R" secondAttribute="top" id="LSj-Ub-Swy"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="IMX-yE-LQv" secondAttribute="bottom" constant="86" id="M5N-tD-Dmk"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="centerY" secondItem="IMX-yE-LQv" secondAttribute="centerY" id="Tnl-gP-FvJ"/>
-                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="top" secondItem="40z-cV-Npu" secondAttribute="bottom" constant="4" id="dHz-Fh-14J"/>
+                                        <constraint firstItem="TRZ-ee-x0s" firstAttribute="leading" secondItem="56o-gp-E4R" secondAttribute="leadingMargin" id="OPJ-14-YCa"/>
+                                        <constraint firstItem="40z-cV-Npu" firstAttribute="leading" secondItem="4Oc-hu-F0W" secondAttribute="leading" id="XD8-bs-mzT"/>
+                                        <constraint firstItem="TRZ-ee-x0s" firstAttribute="top" secondItem="4Oc-hu-F0W" secondAttribute="top" id="ZlU-FI-Crw"/>
+                                        <constraint firstItem="40z-cV-Npu" firstAttribute="leading" secondItem="56o-gp-E4R" secondAttribute="leading" constant="131" id="aNA-2e-EJj"/>
+                                        <constraint firstItem="IMX-yE-LQv" firstAttribute="bottom" secondItem="TRZ-ee-x0s" secondAttribute="bottom" id="aOn-zs-jcH"/>
+                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="bottom" secondItem="40z-cV-Npu" secondAttribute="bottom" id="ct1-VD-khV"/>
+                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="trailing" secondItem="56o-gp-E4R" secondAttribute="trailingMargin" id="dNM-ei-zkb"/>
                                         <constraint firstItem="4P5-te-1rW" firstAttribute="leading" secondItem="56o-gp-E4R" secondAttribute="leading" id="eNq-zM-vur"/>
                                         <constraint firstAttribute="trailing" secondItem="4P5-te-1rW" secondAttribute="trailing" id="eeX-GO-54n"/>
-                                        <constraint firstItem="40z-cV-Npu" firstAttribute="top" secondItem="rx9-LZ-6dP" secondAttribute="top" id="jUw-oK-rDa"/>
-                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="leading" secondItem="40z-cV-Npu" secondAttribute="trailing" constant="7" id="msr-bv-R3S"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="TRZ-ee-x0s" secondAttribute="bottom" constant="81" id="tFt-hC-1um"/>
-                                        <constraint firstItem="rx9-LZ-6dP" firstAttribute="bottom" secondItem="40z-cV-Npu" secondAttribute="bottom" id="upq-ig-E2D"/>
-                                        <constraint firstItem="40z-cV-Npu" firstAttribute="trailing" secondItem="8YP-bG-ig7" secondAttribute="trailing" constant="-137" id="vPG-Va-xAD"/>
-                                        <constraint firstItem="TRZ-ee-x0s" firstAttribute="leading" secondItem="56o-gp-E4R" secondAttribute="leadingMargin" constant="-15" id="vXZ-TF-EhJ"/>
-                                        <constraint firstItem="IMX-yE-LQv" firstAttribute="top" secondItem="8YP-bG-ig7" secondAttribute="top" id="vZi-jp-hYp"/>
+                                        <constraint firstItem="8YP-bG-ig7" firstAttribute="top" secondItem="40z-cV-Npu" secondAttribute="bottom" constant="3" id="iC7-9m-pyq"/>
+                                        <constraint firstItem="IMX-yE-LQv" firstAttribute="leading" secondItem="8YP-bG-ig7" secondAttribute="trailing" constant="4" id="lni-A6-wxZ"/>
+                                        <constraint firstItem="40z-cV-Npu" firstAttribute="top" secondItem="56o-gp-E4R" secondAttribute="top" constant="55" id="rKP-vN-Ech"/>
+                                        <constraint firstItem="4Oc-hu-F0W" firstAttribute="leading" secondItem="TRZ-ee-x0s" secondAttribute="trailing" constant="8" symbolic="YES" id="rRK-xV-gxR"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TRZ-ee-x0s" secondAttribute="bottom" constant="73" id="uYS-ls-q01"/>
+                                        <constraint firstAttribute="trailing" secondItem="IMX-yE-LQv" secondAttribute="trailing" constant="146" id="yyA-4l-0uz"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
