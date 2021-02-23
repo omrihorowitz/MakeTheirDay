@@ -6,7 +6,6 @@
 //
 import UIKit
 
-
 struct Image {
     let image: UIImage
 }
