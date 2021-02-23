@@ -4,5 +4,15 @@
 //
 //  Created by Omri Horowitz on 2/17/21.
 //
+import UIKit
 
-import Foundation
+
+struct Image {
+    let image: UIImage
+}
+
+struct Quote: Decodable {
+    let text: String
+    let author: String?
+}
+
