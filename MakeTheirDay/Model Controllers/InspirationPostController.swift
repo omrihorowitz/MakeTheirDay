@@ -56,7 +56,7 @@ class InspirationPostController {
                 }
             }
             group.enter()
-            fetchImageWith(url: "https://source.unsplash.com/1600x900/?gratitude,life") { (result) in
+            fetchImageWith(url: "https://source.unsplash.com/1600x900/?gratitude,wallpaper") { (result) in
                 switch result {
                 case .success(let image):
                     placeholderArray.append(image)
@@ -76,7 +76,7 @@ class InspirationPostController {
                 }
             }
             group.enter()
-            fetchImageWith(url: "https://source.unsplash.com/1600x900/?mindfulness,sky") { (result) in
+            fetchImageWith(url: "https://source.unsplash.com/1600x900/?reflection,sky") { (result) in
                 switch result {
                 case .success(let image):
                     placeholderArray.append(image)
@@ -86,7 +86,7 @@ class InspirationPostController {
                 }
             }
         group.enter()
-        fetchImageWith(url: "https://source.unsplash.com/1600x900/?fire,motivation") { (result) in
+        fetchImageWith(url: "https://source.unsplash.com/1600x900/?fire,zen") { (result) in
         switch result {
         case .success(let image):
             placeholderArray.append(image)
@@ -106,7 +106,7 @@ class InspirationPostController {
             }
         }
         group.enter()
-        fetchImageWith(url: "https://source.unsplash.com/1600x900/?park,clarity") { (result) in
+        fetchImageWith(url: "https://source.unsplash.com/1600x900/?art,clarity") { (result) in
             switch result {
             case .success(let image):
                 placeholderArray.append(image)
@@ -116,7 +116,7 @@ class InspirationPostController {
             }
         }
         group.enter()
-        fetchImageWith(url: "https://source.unsplash.com/1600x900/?work,perseverance") { (result) in
+        fetchImageWith(url: "https://source.unsplash.com/1600x900/?sports,perseverance") { (result) in
             switch result {
             case .success(let image):
                 placeholderArray.append(image)
@@ -126,7 +126,7 @@ class InspirationPostController {
             }
         }
         group.enter()
-        fetchImageWith(url: "https://source.unsplash.com/1600x900/?flower,peace") { (result) in
+        fetchImageWith(url: "https://source.unsplash.com/1600x900/?music,peace") { (result) in
             switch result {
             case .success(let image):
                 placeholderArray.append(image)
