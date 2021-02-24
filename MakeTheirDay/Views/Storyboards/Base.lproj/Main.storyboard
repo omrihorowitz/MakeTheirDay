@@ -458,21 +458,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="300" id="rWe-DW-IrG" customClass="InspirationPostTableViewCell" customModule="MakeTheirDay" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="300"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="inspirationCell" rowHeight="250" id="rWe-DW-IrG" customClass="InspirationPostTableViewCell" customModule="MakeTheirDay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="250"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rWe-DW-IrG" id="ymL-oi-4uc">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testinspirationimage" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-yy-VMH">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Quote that inspires you so much that I'm using it to test because it's just so inspirational&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmY-Bc-yBa">
-                                            <rect key="frame" x="20" y="11" width="374" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="250" id="SW2-nz-Hpn"/>
+                                                <constraint firstAttribute="width" secondItem="0bd-yy-VMH" secondAttribute="height" multiplier="1:1" id="5pE-hK-DX8"/>
+                                                <constraint firstAttribute="height" constant="300" id="fSJ-gb-GLe"/>
                                             </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Quote that inspires you so much that I'm using it to test because it's just so inspirational&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmY-Bc-yBa">
+                                            <rect key="frame" x="20" y="4" width="374" height="125"/>
+                                            <color key="backgroundColor" red="0.50056751266186839" green="0.4542661675220605" blue="0.50789560996262617" alpha="0.74787872519999998" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                             <color key="textColor" red="0.82854560290000001" green="0.55325874539999997" blue="0.49868794360000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
@@ -480,7 +482,11 @@
                                             <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Omri Horowitz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6L8-1h-tLc">
-                                            <rect key="frame" x="200" y="258" width="195" height="41"/>
+                                            <rect key="frame" x="206" y="149" width="188" height="25"/>
+                                            <color key="backgroundColor" red="0.51713370274605464" green="0.46930002307526469" blue="0.52470432208383833" alpha="0.74787872519999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="PXp-9w-JvV"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="18"/>
                                             <color key="textColor" red="0.82854560290000001" green="0.55325874539999997" blue="0.49868794360000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
@@ -490,18 +496,24 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="0bd-yy-VMH" secondAttribute="trailing" id="6ly-rh-GC0"/>
-                                        <constraint firstItem="nmY-Bc-yBa" firstAttribute="leading" secondItem="ymL-oi-4uc" secondAttribute="leadingMargin" id="EGy-OE-ipx"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="6L8-1h-tLc" secondAttribute="bottom" constant="-10" id="H3I-Cb-wzd"/>
+                                        <constraint firstItem="nmY-Bc-yBa" firstAttribute="width" secondItem="0bd-yy-VMH" secondAttribute="width" multiplier="0.903382" id="GBW-vY-5I8"/>
                                         <constraint firstItem="0bd-yy-VMH" firstAttribute="leading" secondItem="ymL-oi-4uc" secondAttribute="leading" id="Hd8-mT-tk2"/>
                                         <constraint firstItem="0bd-yy-VMH" firstAttribute="top" secondItem="ymL-oi-4uc" secondAttribute="top" id="ON9-qO-uLA"/>
-                                        <constraint firstItem="6L8-1h-tLc" firstAttribute="leading" secondItem="nmY-Bc-yBa" secondAttribute="leading" multiplier="10" id="RC1-Ka-N1d"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="6L8-1h-tLc" secondAttribute="trailing" id="OVf-Ik-0HX"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="6L8-1h-tLc" secondAttribute="bottom" constant="65" id="Prc-Xd-IbL"/>
                                         <constraint firstAttribute="bottom" secondItem="0bd-yy-VMH" secondAttribute="bottom" id="VOU-MB-8Et"/>
-                                        <constraint firstItem="6L8-1h-tLc" firstAttribute="trailing" secondItem="nmY-Bc-yBa" secondAttribute="trailing" constant="1" id="Zew-jx-Lkm"/>
-                                        <constraint firstItem="nmY-Bc-yBa" firstAttribute="top" secondItem="ymL-oi-4uc" secondAttribute="topMargin" id="baL-ui-H6L"/>
-                                        <constraint firstItem="nmY-Bc-yBa" firstAttribute="centerX" secondItem="0bd-yy-VMH" secondAttribute="centerX" id="igs-6y-hid"/>
-                                        <constraint firstItem="6L8-1h-tLc" firstAttribute="height" secondItem="nmY-Bc-yBa" secondAttribute="height" multiplier="0.058" constant="26.5" id="sbq-7Q-Tpw"/>
+                                        <constraint firstItem="nmY-Bc-yBa" firstAttribute="centerX" secondItem="0bd-yy-VMH" secondAttribute="centerX" id="eHB-gq-2A9"/>
+                                        <constraint firstItem="6L8-1h-tLc" firstAttribute="top" secondItem="nmY-Bc-yBa" secondAttribute="bottom" constant="20" id="evr-hm-FAS"/>
+                                        <constraint firstItem="6L8-1h-tLc" firstAttribute="width" secondItem="nmY-Bc-yBa" secondAttribute="width" multiplier="0.5" constant="1" id="fmK-OZ-KQy"/>
+                                        <constraint firstItem="nmY-Bc-yBa" firstAttribute="height" secondItem="0bd-yy-VMH" secondAttribute="height" multiplier="0.5" id="iD2-gx-Mmb"/>
+                                        <constraint firstItem="6L8-1h-tLc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ymL-oi-4uc" secondAttribute="leading" constant="20" symbolic="YES" id="zNI-6q-23r"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="inspirationAuthorLabel" destination="6L8-1h-tLc" id="nfA-TH-gcZ"/>
+                                    <outlet property="inspirationImageView" destination="0bd-yy-VMH" id="Zwh-Wl-xDn"/>
+                                    <outlet property="inspirationQuoteLabel" destination="nmY-Bc-yBa" id="yaH-wa-gu5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

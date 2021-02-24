@@ -6,12 +6,8 @@
 //
 import UIKit
 
-struct Image {
-    let image: UIImage
-}
-
 struct Quote: Decodable {
     let text: String
     let author: String?
+    ///https://type.fit/api/quotes
 }
-
