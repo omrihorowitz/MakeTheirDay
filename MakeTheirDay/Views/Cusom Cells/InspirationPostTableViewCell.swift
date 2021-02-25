@@ -13,7 +13,7 @@ class InspirationPostTableViewCell: UITableViewCell {
     @IBOutlet weak var inspirationQuoteLabel: UILabel!
     @IBOutlet weak var inspirationAuthorLabel: UILabel!
     
-    var quote: Quote? {
+    var quote: QuoteStruct? {
         didSet {
             updateViews()
         }
@@ -22,21 +22,15 @@ class InspirationPostTableViewCell: UITableViewCell {
     override func prepareForReuse() {
             inspirationImageView.image = nil
         }
-    
-    var inspirationImage: UIImage? {
-        didSet {
-            updateImage()
-        }
-    }
-    
+
     func updateViews(){
         guard let quote = quote else { return }
         inspirationQuoteLabel.text = "\"\(quote.text)\""
         inspirationAuthorLabel.text = "- \(quote.author ?? "Unknown")"
     }
     
-    func updateImage() {
-        guard let inspirationImage = inspirationImage else { return }
+    func updateImage(image: UIImage) {
+        let inspirationImage = image
         inspirationImageView.image = inspirationImage
     }
     

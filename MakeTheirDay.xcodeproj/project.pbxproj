@@ -16,8 +16,6 @@
 		6C1210EC25DE31E4009AA4F4 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210EB25DE31E4009AA4F4 /* MessagesTableViewController.swift */; };
 		6C1210EF25DE321E009AA4F4 /* MessageComposerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */; };
 		6C1210F225DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210F125DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift */; };
-		6C1210F525DE32D6009AA4F4 /* MyCircleVisualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210F425DE32D6009AA4F4 /* MyCircleVisualViewController.swift */; };
-		6C1210F825DE3304009AA4F4 /* MyCircleListViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210F725DE3304009AA4F4 /* MyCircleListViewTableViewController.swift */; };
 		6C12110125DE34F2009AA4F4 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110025DE34F2009AA4F4 /* Contact.swift */; };
 		6C12110425DE350E009AA4F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110325DE350E009AA4F4 /* User.swift */; };
 		6C12110A25DE35A2009AA4F4 /* InspirationPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110925DE35A2009AA4F4 /* InspirationPostTableViewCell.swift */; };
@@ -35,6 +33,12 @@
 		6C12113025DF2EDB009AA4F4 /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112F25DF2EDB009AA4F4 /* LocalNotifications.swift */; };
 		6C48588125E4320800DD2932 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C48588025E4320800DD2932 /* CloudKit.framework */; };
 		6C76AFDF25E5906500967291 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76AFDE25E5906500967291 /* CustomError.swift */; };
+		6C9E5CF625E7146200A29B36 /* QuoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5CF525E7146200A29B36 /* QuoteList.swift */; };
+		6C9E5CF925E7148200A29B36 /* First400Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5CF825E7148200A29B36 /* First400Quotes.swift */; };
+		6C9E5CFC25E7148D00A29B36 /* Second400Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5CFB25E7148D00A29B36 /* Second400Quotes.swift */; };
+		6C9E5CFF25E7149600A29B36 /* Third400Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5CFE25E7149600A29B36 /* Third400Quotes.swift */; };
+		6C9E5D0225E7149F00A29B36 /* Fourth400Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5D0125E7149F00A29B36 /* Fourth400Quotes.swift */; };
+		6C9E5D4225E76E6A00A29B36 /* AllThat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C9E5D4125E76E6A00A29B36 /* AllThat.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +53,6 @@
 		6C1210EB25DE31E4009AA4F4 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposerViewController.swift; sourceTree = "<group>"; };
 		6C1210F125DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleSegmentedOptionsViewController.swift; sourceTree = "<group>"; };
-		6C1210F425DE32D6009AA4F4 /* MyCircleVisualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleVisualViewController.swift; sourceTree = "<group>"; };
-		6C1210F725DE3304009AA4F4 /* MyCircleListViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleListViewTableViewController.swift; sourceTree = "<group>"; };
 		6C12110025DE34F2009AA4F4 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		6C12110325DE350E009AA4F4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6C12110925DE35A2009AA4F4 /* InspirationPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationPostTableViewCell.swift; sourceTree = "<group>"; };
@@ -69,6 +71,12 @@
 		6C48587D25E431F500DD2932 /* MakeTheirDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MakeTheirDay.entitlements; sourceTree = "<group>"; };
 		6C48588025E4320800DD2932 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		6C76AFDE25E5906500967291 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		6C9E5CF525E7146200A29B36 /* QuoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteList.swift; sourceTree = "<group>"; };
+		6C9E5CF825E7148200A29B36 /* First400Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First400Quotes.swift; sourceTree = "<group>"; };
+		6C9E5CFB25E7148D00A29B36 /* Second400Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second400Quotes.swift; sourceTree = "<group>"; };
+		6C9E5CFE25E7149600A29B36 /* Third400Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Third400Quotes.swift; sourceTree = "<group>"; };
+		6C9E5D0125E7149F00A29B36 /* Fourth400Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fourth400Quotes.swift; sourceTree = "<group>"; };
+		6C9E5D4125E76E6A00A29B36 /* AllThat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AllThat.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,7 @@
 		6C1210DE25DD86B8009AA4F4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C9E5D4125E76E6A00A29B36 /* AllThat.mp3 */,
 				6C1210C925DD8543009AA4F4 /* AppDelegate.swift */,
 				6C1210CB25DD8543009AA4F4 /* SceneDelegate.swift */,
 				6C1210D225DD8544009AA4F4 /* Assets.xcassets */,
@@ -136,6 +145,7 @@
 		6C1210E425DE314F009AA4F4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6C9E5CF425E7144900A29B36 /* All Quotes */,
 				6C12110025DE34F2009AA4F4 /* Contact.swift */,
 				6C12110325DE350E009AA4F4 /* User.swift */,
 				6C12111325DE36AE009AA4F4 /* Message.swift */,
@@ -163,8 +173,6 @@
 				6C1210EB25DE31E4009AA4F4 /* MessagesTableViewController.swift */,
 				6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */,
 				6C1210F125DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift */,
-				6C1210F425DE32D6009AA4F4 /* MyCircleVisualViewController.swift */,
-				6C1210F725DE3304009AA4F4 /* MyCircleListViewTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -206,6 +214,18 @@
 				6C48588025E4320800DD2932 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C9E5CF425E7144900A29B36 /* All Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				6C9E5CF525E7146200A29B36 /* QuoteList.swift */,
+				6C9E5CF825E7148200A29B36 /* First400Quotes.swift */,
+				6C9E5CFB25E7148D00A29B36 /* Second400Quotes.swift */,
+				6C9E5CFE25E7149600A29B36 /* Third400Quotes.swift */,
+				6C9E5D0125E7149F00A29B36 /* Fourth400Quotes.swift */,
+			);
+			path = "All Quotes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +288,7 @@
 				6C1210D625DD8544009AA4F4 /* LaunchScreen.storyboard in Resources */,
 				6C1210D325DD8544009AA4F4 /* Assets.xcassets in Resources */,
 				6C1210D125DD8543009AA4F4 /* Main.storyboard in Resources */,
+				6C9E5D4225E76E6A00A29B36 /* AllThat.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,15 +305,17 @@
 				6C12112A25DE394E009AA4F4 /* AudioRecord.swift in Sources */,
 				6C1210CA25DD8543009AA4F4 /* AppDelegate.swift in Sources */,
 				6C12111A25DE3754009AA4F4 /* ContactController.swift in Sources */,
-				6C1210F525DE32D6009AA4F4 /* MyCircleVisualViewController.swift in Sources */,
 				6C12110125DE34F2009AA4F4 /* Contact.swift in Sources */,
 				6C12113025DF2EDB009AA4F4 /* LocalNotifications.swift in Sources */,
-				6C1210F825DE3304009AA4F4 /* MyCircleListViewTableViewController.swift in Sources */,
 				6C12111D25DE375E009AA4F4 /* UserController.swift in Sources */,
+				6C9E5D0225E7149F00A29B36 /* Fourth400Quotes.swift in Sources */,
+				6C9E5CFF25E7149600A29B36 /* Third400Quotes.swift in Sources */,
 				6C1210EF25DE321E009AA4F4 /* MessageComposerViewController.swift in Sources */,
 				6C12112325DE376F009AA4F4 /* InspirationPostController.swift in Sources */,
 				6C12110E25DE361C009AA4F4 /* MessageTableViewCell.swift in Sources */,
 				6C1210F225DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift in Sources */,
+				6C9E5CF625E7146200A29B36 /* QuoteList.swift in Sources */,
+				6C9E5CF925E7148200A29B36 /* First400Quotes.swift in Sources */,
 				6C1210EC25DE31E4009AA4F4 /* MessagesTableViewController.swift in Sources */,
 				6C1210E825DE31B8009AA4F4 /* InspirationTableViewController.swift in Sources */,
 				6C76AFDF25E5906500967291 /* CustomError.swift in Sources */,
@@ -300,6 +323,7 @@
 				6C1210CC25DD8543009AA4F4 /* SceneDelegate.swift in Sources */,
 				6C12110425DE350E009AA4F4 /* User.swift in Sources */,
 				6C12110A25DE35A2009AA4F4 /* InspirationPostTableViewCell.swift in Sources */,
+				6C9E5CFC25E7148D00A29B36 /* Second400Quotes.swift in Sources */,
 				6C12112725DE3943009AA4F4 /* VideoRecord.swift in Sources */,
 				6C12111425DE36AE009AA4F4 /* Message.swift in Sources */,
 			);

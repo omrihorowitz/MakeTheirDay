@@ -6,7 +6,7 @@
 //
 import UIKit
 
-struct Quote: Decodable {
+struct QuoteStruct: Decodable {
     let text: String
     let author: String?
     ///https://type.fit/api/quotes
