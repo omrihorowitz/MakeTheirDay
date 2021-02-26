@@ -95,7 +95,7 @@ class InspirationPostController {
         }
     }
         group.enter()
-        fetchImageWith(url: "https://source.unsplash.com/1600x900/?artist,strength") { (result) in
+        fetchImageWith(url: "https://source.unsplash.com/1600x900/?artist,inspiration") { (result) in
             switch result {
             case .success(let image):
                 placeholderArray.append(image)
@@ -105,7 +105,7 @@ class InspirationPostController {
             }
         }
         group.enter()
-        fetchImageWith(url: "https://source.unsplash.com/1600x900/?art,clarity") { (result) in
+        fetchImageWith(url: "https://source.unsplash.com/1600x900/?art,wisdom") { (result) in
             switch result {
             case .success(let image):
                 placeholderArray.append(image)

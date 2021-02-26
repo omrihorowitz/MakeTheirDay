@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class InspirationTableViewController: UITableViewController {
 
@@ -17,7 +18,7 @@ class InspirationTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchImages()
+        startAnimation()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,6 +42,25 @@ class InspirationTableViewController: UITableViewController {
             }
         }
     }
+    
+    fileprivate func startAnimation() {
+        let loading = NVActivityIndicatorView(frame: .zero, type: .ballRotateChase, color: .orange, padding: 0)
+        loading.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(loading)
+        NSLayoutConstraint.activate([
+            loading.widthAnchor.constraint(equalToConstant: 300),
+            loading.heightAnchor.constraint(equalToConstant: 300),
+            loading.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            loading.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+        loading.startAnimating()
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5) {
+            loading.stopAnimating()
+        }
+    }
+
 
     // MARK: - Table view data source
 
@@ -53,7 +73,8 @@ class InspirationTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "inspirationCell", for: indexPath) as? InspirationPostTableViewCell else { return UITableViewCell() }
         
         let allQuotes: [QuoteList] = [First400Quotes(), Second400Quotes(), Third400Quotes(), Fourth400Quotes()]
-        let quote = allQuotes.randomElement()?.quotes.randomElement()
+        let quoteList = allQuotes.randomElement()
+        let quote = quoteList?.quotes.randomElement()
         
         cell.updateImage(image: images[indexPath.row])
         cell.quote = quote

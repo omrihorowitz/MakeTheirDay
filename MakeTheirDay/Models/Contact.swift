@@ -12,8 +12,6 @@ struct ContactStrings {
     static let recordTypeKey = "Contact"
     fileprivate static let nameKey = "name"
     fileprivate static let lastInTouchKey = "lastInTouch"
-    fileprivate static let userReferenceKey = "userReference"
-    fileprivate static let favoriteKey = "favorite"
     fileprivate static let photoAssetKey = "photoAsset"
 }
 
@@ -21,8 +19,6 @@ class Contact {
     var name: String
     var lastInTouch: String
     var recordID: CKRecord.ID
-    var userReference: CKRecord.Reference?
-    var favorite: Bool
     
     var contactPhoto: UIImage? {
         get {
@@ -52,12 +48,10 @@ class Contact {
         }
     }
     
-    init(name: String, lastInTouch: String, favorite: Bool, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), userReference: CKRecord.Reference?, contactPhoto: UIImage? = nil) {
+    init(name: String, lastInTouch: String, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), contactPhoto: UIImage? = nil) {
         self.name = name
         self.lastInTouch = lastInTouch
-        self.favorite = favorite
         self.recordID = recordID
-        self.userReference = userReference
         self.contactPhoto = contactPhoto
     }
 }
@@ -71,12 +65,7 @@ extension CKRecord {
         self.setValuesForKeys([
             ContactStrings.nameKey : contact.name,
             ContactStrings.lastInTouchKey : contact.lastInTouch,
-            ContactStrings.favoriteKey : contact.favorite
         ])
-        
-        if let reference = contact.userReference {
-            setValue(reference, forKey: ContactStrings.userReferenceKey)
-        }
         
         if contact.photoAsset != nil {
             setValue(contact.photoAsset, forKey: ContactStrings.photoAssetKey)
@@ -89,11 +78,8 @@ extension Contact {
     convenience init?(ckRecord: CKRecord) {
         
         guard let name = ckRecord[ContactStrings.nameKey] as? String,
-              let lastInTouch = ckRecord[ContactStrings.lastInTouchKey] as? String,
-              let favorite = ckRecord[ContactStrings.favoriteKey] as? Bool else {return nil}
-        
-        let userReference = ckRecord[ContactStrings.userReferenceKey] as? CKRecord.Reference
-        
+              let lastInTouch = ckRecord[ContactStrings.lastInTouchKey] as? String else {return nil}
+                
         var foundPhoto: UIImage?
         
         if let photoAsset = ckRecord[ContactStrings.photoAssetKey] as? CKAsset {
@@ -105,6 +91,6 @@ extension Contact {
             }
         }
 
-        self.init(name: name, lastInTouch: lastInTouch, favorite: favorite, recordID: ckRecord.recordID, userReference: userReference, contactPhoto: foundPhoto)
+        self.init(name: name, lastInTouch: lastInTouch, recordID: ckRecord.recordID, contactPhoto: foundPhoto)
     }
 }

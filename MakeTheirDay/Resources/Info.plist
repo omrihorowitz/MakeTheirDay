@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please Allow Access to Camera for Profile Picture</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please Allow Access to Photo Library for Profile Picture</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>CFBundleExecutable</key>

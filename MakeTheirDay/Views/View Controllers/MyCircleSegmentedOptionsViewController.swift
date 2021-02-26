@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class MyCircleSegmentedOptionsViewController: UIViewController {
     
@@ -14,8 +15,6 @@ class MyCircleSegmentedOptionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func switchViews(_ sender: UISegmentedControl) {
