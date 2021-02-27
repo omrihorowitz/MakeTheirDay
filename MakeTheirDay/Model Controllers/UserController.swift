@@ -60,25 +60,56 @@ class UserController {
         }
     }
     
-    func updateUser() {
+    func update(user: User, completion: @escaping (Result<String, CustomError>) -> Void) {
+        let record = CKRecord(user: user)
         
+        let operation = CKModifyRecordsOperation(recordsToSave: [record], recordIDsToDelete: nil)
+        
+        operation.savePolicy = .changedKeys
+        operation.qualityOfService = .userInteractive
+        operation.modifyRecordsCompletionBlock = { records, recordIds, error in
+            if let error = error {
+                print("======== ERROR ========")
+                print("Function: \(#function)")
+                print("Error: \(error)")
+                print("Description: \(error.localizedDescription)")
+                print("======== ERROR ========")
+                return completion(.failure(.ckError(error)))
+            }
+            guard let record = records?.first else { return completion(.failure(.unableToDecode))}
+            completion(.success("Successfully updated \(record.recordID.recordName) in Cloudkit."))
+        }
+        privateDB.add(operation)
     }
     
-    func fetchUser(predicate: NSPredicate, completion: @escaping (Result<User, CustomError>) -> Void) {
+    func fetchUser(completion: @escaping (Result<User?, CustomError>) -> Void) {
         
-        let query = CKQuery(recordType: ContactStrings.recordTypeKey, predicate: predicate)
-        
-        privateDB.perform(query, inZoneWith: nil) { (records, error) in
-            
-            if let error = error {
-                return completion(.failure(.thrownError(error)))
+        fetchAppleUserReference { (result) in
+            switch result {
+            case .success(let reference):
+                guard let reference = reference else {return completion(.failure(.noData))}
+                
+                let predicate = NSPredicate(format: "%K == %@", argumentArray: [UserStrings.appleUserRefKey, reference])
+                
+                let query = CKQuery(recordType: UserStrings.recordTypeKey, predicate: predicate)
+                
+                self.privateDB.perform(query, inZoneWith: nil) { (records, error) in
+                    
+                    if let error = error {
+                        return completion(.failure(.ckError(error)))
+                    }
+                    
+                    guard let record = records?.first else {return completion (.failure(.noData))}
+                    
+                    guard let foundUser = User(ckRecord: record) else {return completion(.failure(.noData))}
+                    
+                    print("Fetched user: \(record.recordID.recordName)")
+                    completion(.success(foundUser))
+                }
+                
+            case .failure(let error):
+                print(error.errorDescription)
             }
-            
-            guard let records = records else {return completion(.failure(.unableToDecode))}
-            
-            guard let user = records.compactMap({ User(ckRecord: $0) }).first else {return completion(.failure(.unableToDecode))}
-            self.currentUser = user
-            completion(.success(user))
         }
     }
 }

@@ -22,13 +22,15 @@ class GalaxyViewController: UIViewController {
     @IBOutlet weak var favoriteContactPic3: UIImageView!
     @IBOutlet weak var favoriteContactPic4: UIImageView!
     @IBOutlet weak var favoriteContactPic5: UIImageView!
+    @IBOutlet weak var profilePhoto: UIImageView!
+    @IBOutlet weak var profilePhotoContainer: UIView!
     
     //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //fetch contact pics
-//        UserController.sharedInstance.
+        fetchUser()
+        setupViews()
     }
         
     //MARK: - Actions
@@ -48,10 +50,38 @@ class GalaxyViewController: UIViewController {
     //MARK: - Functions
     
     func fetchUser() {
-        UserController.sharedInstance.fetchUser(predicate: <#T##NSPredicate#>, completion: <#T##(Result<User, CustomError>) -> Void#>)
+        UserController.sharedInstance.fetchUser { (result) in
+            switch result {
+            case .success(let user):
+                DispatchQueue.main.async {
+                    UserController.sharedInstance.currentUser = user
+                    self.profilePhoto.image = user?.profilePhoto
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
-
+    func setupViews() {
+        profilePhotoContainer.layer.cornerRadius = profilePhotoContainer.frame.height / 2
+        profilePhotoContainer.clipsToBounds = true
+        profilePhoto.layer.cornerRadius = profilePhoto.frame.height / 2
+        profilePhoto.clipsToBounds = true
+        favoriteContactPic1.layer.cornerRadius = favoriteContactPic1.frame.height / 2
+        favoriteContactPic1.clipsToBounds = true
+        favoriteContactPic2.layer.cornerRadius = favoriteContactPic2.frame.height / 2
+        favoriteContactPic2.clipsToBounds = true
+        favoriteContactPic3.layer.cornerRadius = favoriteContactPic3.frame.height / 2
+        favoriteContactPic3.clipsToBounds = true
+        favoriteContactPic4.layer.cornerRadius = favoriteContactPic4.frame.height / 2
+        favoriteContactPic4.clipsToBounds = true
+        favoriteContactPic5.layer.cornerRadius = favoriteContactPic5.frame.height / 2
+        favoriteContactPic5.clipsToBounds = true
+    }
+    
+    
+        
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -61,7 +91,6 @@ class GalaxyViewController: UIViewController {
             }
         }
     }
-
 
 //MARK: - Extensions
 extension GalaxyViewController: PhotoPickerViewControllerDelegate {
@@ -79,4 +108,3 @@ extension GalaxyViewController: PhotoPickerViewControllerDelegate {
         }
     }
 }
-
