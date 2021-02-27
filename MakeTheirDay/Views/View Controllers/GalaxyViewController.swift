@@ -113,8 +113,6 @@ extension GalaxyViewController: PhotoPickerViewControllerDelegate {
                     print(error)
                 }
             }
-//        } else {
-//            UserController.sharedInstance.updateUser(user: user, completion: <#T##(Result<String, CustomError>) -> Void#>)
         }
     }
 }
