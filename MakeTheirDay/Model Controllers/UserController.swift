@@ -60,7 +60,7 @@ class UserController {
         }
     }
     
-    func update(user: User, completion: @escaping (Result<String, CustomError>) -> Void) {
+    func updateUser(user: User, completion: @escaping (Result<String, CustomError>) -> Void) {
         let record = CKRecord(user: user)
         
         let operation = CKModifyRecordsOperation(recordsToSave: [record], recordIDsToDelete: nil)

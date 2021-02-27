@@ -36,15 +36,15 @@
             <objects>
                 <viewController id="XeD-RZ-tes" customClass="PhotoPickerViewController" customModule="MakeTheirDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YkK-Nr-U4B">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
+                        <rect key="frame" x="0.0" y="0.0" width="276.33333333333331" height="200.33333333333334"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zbX-iQ-PAb">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
+                                <rect key="frame" x="0.0" y="0.0" width="276.33333333333331" height="200.33333333333334"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.18424048013245028" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hD-7s-KxD">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="0.0" width="276.33333333333331" height="200.33333333333334"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="15"/>
                                 <state key="normal" title="Select Image">
                                     <color key="titleColor" red="0.8392156959" green="0.69411766529999996" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -474,9 +474,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P7U-Sn-v77">
                                 <rect key="frame" x="265" y="223" width="100" height="100"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="fP0-I4-rO1">
+                            <containerView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="fP0-I4-rO1">
                                 <rect key="frame" x="157" y="312" width="100" height="101"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fP0-I4-rO1" secondAttribute="height" multiplier="100:101" id="7Cm-HT-3QD"/>
                                     <constraint firstAttribute="height" constant="101" id="7yv-2z-Art"/>
@@ -509,7 +508,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="H57-4A-uJA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                 <color key="textColor" red="0.73333334920000004" green="0.68235301969999995" blue="0.90196073060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
@@ -804,7 +803,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="tMQ-0t-d5F"/>
-        <segue reference="nbV-AX-efY"/>
+        <segue reference="wgF-ow-V4H"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.left.circle" catalog="system" width="128" height="121"/>
