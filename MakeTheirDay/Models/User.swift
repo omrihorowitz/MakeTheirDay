@@ -10,13 +10,11 @@ import CloudKit
 
 struct UserStrings {
     static let recordTypeKey = "User"
-    fileprivate static let nameKey = "name"
     static let appleUserRefKey = "appleUserRef"
     fileprivate static let photoAssetKey = "photoAsset"
 }
 
 class User {
-    var name: String
     var recordID: CKRecord.ID
     var appleUserRef: CKRecord.Reference
     
@@ -46,8 +44,7 @@ class User {
         }
     }
     
-    init(name: String, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), appleUserRef: CKRecord.Reference, profilePhoto: UIImage? = nil) {
-        self.name = name
+    init(recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), appleUserRef: CKRecord.Reference, profilePhoto: UIImage? = nil) {
         self.recordID = recordID
         self.appleUserRef = appleUserRef
         self.profilePhoto = profilePhoto
@@ -58,8 +55,7 @@ class User {
 extension User {
     
     convenience init?(ckRecord: CKRecord) {
-        guard let name = ckRecord[UserStrings.nameKey] as? String,
-              let appleUserRef = ckRecord[UserStrings.appleUserRefKey] as? CKRecord.Reference else { return nil }
+        guard let appleUserRef = ckRecord[UserStrings.appleUserRefKey] as? CKRecord.Reference else { return nil }
         
         var foundPhoto: UIImage?
         
@@ -72,7 +68,7 @@ extension User {
             }
         }
         
-        self.init(name: name, recordID: ckRecord.recordID, appleUserRef: appleUserRef, profilePhoto: foundPhoto)
+        self.init(recordID: ckRecord.recordID, appleUserRef: appleUserRef, profilePhoto: foundPhoto)
     }
 }
 
@@ -89,7 +85,6 @@ extension CKRecord {
         self.init(recordType: UserStrings.recordTypeKey, recordID: user.recordID)
         
         setValuesForKeys([
-            UserStrings.nameKey : user.name,
             UserStrings.appleUserRefKey : user.appleUserRef,
             UserStrings.photoAssetKey : user.photoAsset
         ])

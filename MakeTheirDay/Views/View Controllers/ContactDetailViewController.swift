@@ -18,9 +18,9 @@ class ContactDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         updateUI()
         deleteContactButton.isHidden = true
+        addCancelKeyboardGestureRecognizer()
     }
     
     //MARK: - Properties
@@ -55,10 +55,7 @@ class ContactDetailViewController: UIViewController {
                 self.switchOnResult(result)
             }
         }
-        ContactListViewController.resultsArray.append(contact!)
     }
-
-
 
 //MARK: - Methods
 func updateUI() {
@@ -132,7 +129,19 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
 //MARK: - Extensions
 extension ContactDetailViewController: PhotoPickerViewControllerDelegate {
-func photoPickerViewControllerSelected(image: UIImage) {
-    selectedImage = image
+    func photoPickerViewControllerSelected(image: UIImage) {
+        selectedImage = image
+    }
+}
+
+extension UIViewController {
+    func addCancelKeyboardGestureRecognizer() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }//End of extension

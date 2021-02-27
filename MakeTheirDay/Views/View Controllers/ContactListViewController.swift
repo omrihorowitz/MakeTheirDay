@@ -27,7 +27,7 @@ class ContactListViewController: UIViewController {
     }
     
     //MARK: - Properties
-    static var resultsArray: [Contact] = []
+    var contacts: [Contact] = []
     var isSearching = false
     
     //MARK: - Methods
@@ -40,7 +40,7 @@ class ContactListViewController: UIViewController {
             switch result {
             case .success(let contacts):
                 ContactController.sharedInstance.contacts = contacts.sorted(by: { $0.name.lowercased() < $1.name.lowercased() })
-                ContactListViewController.resultsArray = ContactController.sharedInstance.contacts
+                self.contacts = ContactController.sharedInstance.contacts
                 DispatchQueue.main.async {
                 }
                 
@@ -52,13 +52,13 @@ class ContactListViewController: UIViewController {
     
     // MARK: - Table view data source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ContactListViewController.resultsArray.count
+        return contacts.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as? ContactTableViewCell
 
-        guard let contact = ContactListViewController.resultsArray[indexPath.row] as Contact? else {return UITableViewCell()}
+        guard let contact = contacts[indexPath.row] as Contact? else {return UITableViewCell()}
         cell?.setupCell(contact: contact)
 
         return cell ?? UITableViewCell()
@@ -70,7 +70,8 @@ class ContactListViewController: UIViewController {
         if segue.identifier == "toDetailVC" {
             guard let indexPath = tableView.indexPathForSelectedRow,
                   let destinationVC = segue.destination as? ContactDetailViewController else {return}
-     
+            let contactToSend = contacts[indexPath.row]
+            destinationVC.contact = contactToSend
         }
     }
 }//End of class

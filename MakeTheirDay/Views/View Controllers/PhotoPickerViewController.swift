@@ -60,7 +60,6 @@ extension PhotoPickerViewController: UIImagePickerControllerDelegate, UINavigati
             imageView.image = photo
             delegate?.photoPickerViewControllerSelected(image: photo)
             selectImageButton.setTitle("", for: .normal)
-            
         }
     }
     
