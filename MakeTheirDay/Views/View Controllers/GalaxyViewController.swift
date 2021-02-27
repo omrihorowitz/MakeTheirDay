@@ -6,13 +6,13 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class GalaxyViewController: UIViewController {
 
     //MARK: - Properties
     
     var selectedImage: UIImage?
-    
     
     //MARK: - Outlets
     
@@ -65,6 +65,7 @@ class GalaxyViewController: UIViewController {
     }
     
     func setupViews() {
+        startAnimation()
         profilePhotoContainer.layer.cornerRadius = profilePhotoContainer.frame.height / 2
         profilePhotoContainer.clipsToBounds = true
         profilePhotoContainer.alpha = 0.75
@@ -88,7 +89,23 @@ class GalaxyViewController: UIViewController {
         favoriteContactPic5.alpha = 0.75
     }
     
-    
+    fileprivate func startAnimation() {
+        let loading = NVActivityIndicatorView(frame: .zero, type: .ballRotateChase, color: .cyan, padding: 0)
+        loading.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(loading)
+        NSLayoutConstraint.activate([
+            loading.widthAnchor.constraint(equalToConstant: 200),
+            loading.heightAnchor.constraint(equalToConstant: 200),
+            loading.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            loading.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+        loading.startAnimating()
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            loading.stopAnimating()
+        }
+    }
         
     // MARK: - Navigation
 
@@ -105,12 +122,24 @@ extension GalaxyViewController: PhotoPickerViewControllerDelegate {
     func photoPickerViewControllerSelected(image: UIImage) {
         selectedImage = image
         if let selectedImage = selectedImage {
-            UserController.sharedInstance.createUser(profilePhoto: selectedImage) { (result) in
-                switch result {
-                case .success(let user):
-                    print(user.recordID)
-                case .failure(let error):
-                    print(error)
+            if let user = UserController.sharedInstance.currentUser {
+                UserController.sharedInstance.updateUser(user: user, profilePhoto: selectedImage) { (result) in
+                    switch result {
+                    case .success(let user):
+                        self.fetchUser()
+                        print(user.recordID)
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
+            } else {
+                UserController.sharedInstance.createUser(profilePhoto: selectedImage) { (result) in
+                    switch result {
+                    case .success(let user):
+                        print(user.recordID)
+                    case .failure(let error):
+                        print(error)
+                    }
                 }
             }
         }

@@ -60,7 +60,10 @@ class UserController {
         }
     }
     
-    func updateUser(user: User, profilePhoto: UIImage, completion: @escaping (Result<String, CustomError>) -> Void) {
+    func updateUser(user: User, profilePhoto: UIImage, completion: @escaping (Result<User, CustomError>) -> Void) {
+        
+        user.profilePhoto = profilePhoto
+        
         let record = CKRecord(user: user)
         
         let operation = CKModifyRecordsOperation(recordsToSave: [record], recordIDsToDelete: nil)
@@ -77,7 +80,8 @@ class UserController {
                 return completion(.failure(.ckError(error)))
             }
             guard let record = records?.first else { return completion(.failure(.unableToDecode))}
-            completion(.success("Successfully updated \(record.recordID.recordName) in Cloudkit."))
+            guard let user = User(ckRecord: record) else { return completion(.failure(.noData))}
+            completion(.success(user))
         }
         privateDB.add(operation)
     }

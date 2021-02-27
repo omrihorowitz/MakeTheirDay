@@ -48,19 +48,18 @@ class InspirationTableViewController: UITableViewController {
         loading.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loading)
         NSLayoutConstraint.activate([
-            loading.widthAnchor.constraint(equalToConstant: 300),
-            loading.heightAnchor.constraint(equalToConstant: 300),
+            loading.widthAnchor.constraint(equalToConstant: 200),
+            loading.heightAnchor.constraint(equalToConstant: 200),
             loading.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             loading.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         
         loading.startAnimating()
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             loading.stopAnimating()
         }
     }
-
 
     // MARK: - Table view data source
 
