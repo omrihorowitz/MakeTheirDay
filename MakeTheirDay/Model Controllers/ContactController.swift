@@ -16,9 +16,9 @@ class ContactController {
     let privateDB = CKContainer.default().privateCloudDatabase
     
     //MARK: - Functions
-    func saveContact(name: String, lastInTouch: String, contactPhoto: UIImage?, completion: @escaping (Result<Contact, CustomError>) -> Void) {
+    func saveContact(name: String, lastInTouch: String, favorite: Bool, contactPhoto: UIImage?, completion: @escaping (Result<Contact, CustomError>) -> Void) {
         
-        let contactToSave = Contact(name: name, lastInTouch: lastInTouch, contactPhoto: contactPhoto)
+        let contactToSave = Contact(name: name, lastInTouch: lastInTouch, favorite: favorite, contactPhoto: contactPhoto)
         
         let newRecord = CKRecord(contact: contactToSave)
         
@@ -36,7 +36,7 @@ class ContactController {
         }
     }
     
-    func fetchContacts(predicate: NSPredicate, completion: @escaping (Result<[Contact], CustomError>) -> Void) {
+    func fetchContacts(predicate: NSPredicate, completion: @escaping (Result<String, CustomError>) -> Void) {
         
         let query = CKQuery(recordType: ContactStrings.recordTypeKey, predicate: predicate)
         
@@ -50,14 +50,18 @@ class ContactController {
             
             let contacts = records.compactMap({ Contact(ckRecord: $0) })
             
-            completion(.success(contacts))
+            
+            self.contacts = contacts.sorted(by: { $0.name.lowercased() < $1.name.lowercased() })
+            
+            completion(.success("Successfully fetched contacts"))
         }
     }
     
-    func update(contact: Contact, name: String, lastInTouch: String, contactPhoto: UIImage, completion: @escaping (Result<Contact, CustomError>) -> Void) {
+    func updateContact(contact: Contact, name: String, lastInTouch: String, favorite: Bool, contactPhoto: UIImage, completion: @escaping (Result<Contact, CustomError>) -> Void) {
         
         contact.name = name
         contact.lastInTouch = lastInTouch
+        contact.favorite = favorite
         contact.contactPhoto = contactPhoto
         
         let record = CKRecord(contact: contact)

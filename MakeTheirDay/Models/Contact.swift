@@ -12,12 +12,14 @@ struct ContactStrings {
     static let recordTypeKey = "Contact"
     fileprivate static let nameKey = "name"
     fileprivate static let lastInTouchKey = "lastInTouch"
+    fileprivate static let favoriteKey = "favorite"
     fileprivate static let photoAssetKey = "photoAsset"
 }
 
 class Contact {
     var name: String
     var lastInTouch: String
+    var favorite: Bool = false
     var recordID: CKRecord.ID
     
     var contactPhoto: UIImage? {
@@ -48,9 +50,10 @@ class Contact {
         }
     }
     
-    init(name: String, lastInTouch: String, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), contactPhoto: UIImage? = nil) {
+    init(name: String, lastInTouch: String, favorite: Bool = false, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), contactPhoto: UIImage? = nil) {
         self.name = name
         self.lastInTouch = lastInTouch
+        self.favorite = favorite
         self.recordID = recordID
         self.contactPhoto = contactPhoto
     }
@@ -65,6 +68,7 @@ extension CKRecord {
         self.setValuesForKeys([
             ContactStrings.nameKey : contact.name,
             ContactStrings.lastInTouchKey : contact.lastInTouch,
+            ContactStrings.favoriteKey : contact.favorite,
         ])
         
         if contact.photoAsset != nil {
@@ -78,7 +82,8 @@ extension Contact {
     convenience init?(ckRecord: CKRecord) {
         
         guard let name = ckRecord[ContactStrings.nameKey] as? String,
-              let lastInTouch = ckRecord[ContactStrings.lastInTouchKey] as? String else {return nil}
+              let lastInTouch = ckRecord[ContactStrings.lastInTouchKey] as? String,
+              let favorite = ckRecord[ContactStrings.favoriteKey] as? Bool else {return nil}
                 
         var foundPhoto: UIImage?
         
@@ -91,6 +96,6 @@ extension Contact {
             }
         }
 
-        self.init(name: name, lastInTouch: lastInTouch, recordID: ckRecord.recordID, contactPhoto: foundPhoto)
+        self.init(name: name, lastInTouch: lastInTouch, favorite: favorite, recordID: ckRecord.recordID, contactPhoto: foundPhoto)
     }
 }

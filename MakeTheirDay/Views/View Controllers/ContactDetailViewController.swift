@@ -11,9 +11,11 @@ class ContactDetailViewController: UIViewController {
     
     //MARK: - Outlets
 
-    @IBOutlet weak var contactPic: UIView!
+    @IBOutlet weak var contactPhotoContainer: UIView!
+    @IBOutlet weak var contactPhoto: UIImageView!
     @IBOutlet weak var contactName: UITextField!
     @IBOutlet weak var lastInTouch: UITextField!
+    @IBOutlet weak var favoriteButtonImage: UIButton!
     @IBOutlet weak var deleteContactButton: UIButton!
     
     override func viewDidLoad() {
@@ -28,13 +30,22 @@ class ContactDetailViewController: UIViewController {
         didSet {
             loadViewIfNeeded()
             deleteContactButton.isHidden = false
+            updateUI()
         }
     }
-    
+    var isFavorite = false
     var selectedImage: UIImage?
     
     //MARK: - Actions
-
+    @IBAction func favoriteButtonTapped(_ sender: Any) {
+        isFavorite.toggle()
+        if isFavorite {
+            favoriteButtonImage.setImage(UIImage(systemName: "star.fill"), for: .normal)
+        } else {
+            favoriteButtonImage.setImage(UIImage(systemName: "star"), for: .normal)
+        }
+    }
+    
     @IBAction func deleteButtonTapped(_ sender: Any) {
         presentDeleteButtonAlertController()
     }
@@ -46,21 +57,23 @@ class ContactDetailViewController: UIViewController {
     }
 
         if let contact = contact {
-            ContactController.sharedInstance.update(contact: contact, name: name, lastInTouch: "\(String(describing: lastInTouch))", contactPhoto: contactPhoto) { (result) in
+            ContactController.sharedInstance.updateContact(contact: contact, name: name, lastInTouch: spokenStatus, favorite: isFavorite, contactPhoto: contactPhoto) { (result) in
                 self.switchOnResult(result)
             }
 
         } else {
-            ContactController.sharedInstance.saveContact(name: name, lastInTouch: "\(String(describing: lastInTouch))", contactPhoto: contactPhoto) { (result) in
+            ContactController.sharedInstance.saveContact(name: name, lastInTouch: spokenStatus, favorite: isFavorite, contactPhoto: contactPhoto) { (result) in
                 self.switchOnResult(result)
             }
         }
+        navigationController?.popViewController(animated: true)
     }
 
 //MARK: - Methods
 func updateUI() {
     guard let contact = contact else {return}
     contactName.text = contact.name
+    contactPhoto.image = contact.contactPhoto
     lastInTouch.text = contact.lastInTouch
 }
 
@@ -77,7 +90,7 @@ func switchOnResult(_ result: Result<Contact, CustomError>) {
 }
 
 func presentTextFieldAlertController() {
-    let alert = UIAlertController(title: "Please fill out all required fields", message: "First name and Photo", preferredStyle: .alert)
+    let alert = UIAlertController(title: "Make sure to fill your contact info!", message: "Name and photo plz :P", preferredStyle: .alert)
 
     let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
 
@@ -87,11 +100,11 @@ func presentTextFieldAlertController() {
 }
 
 func presentDeleteButtonAlertController() {
-    let alert = UIAlertController(title: "Delete Contact", message: "Are you sure about that?", preferredStyle: .alert)
+    let alert = UIAlertController(title: "Delete Contact", message: "You sure?", preferredStyle: .alert)
 
     let cancelAction = UIAlertAction(title: "No", style: .default, handler: nil)
 
-    let confirmAction = UIAlertAction(title: "Yeah, I hate this person", style: .destructive) { (_) in
+    let confirmAction = UIAlertAction(title: "Bye, Felicia", style: .destructive) { (_) in
 
         guard let contact = self.contact else {return}
 
