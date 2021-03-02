@@ -425,7 +425,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Circle" id="vEz-ZF-YTK">
-                        <barButtonItem key="backBarButtonItem" title="📒" id="kla-P9-pDn"/>
+                        <barButtonItem key="backBarButtonItem" title="📒" id="aqO-Zc-rLi"/>
                     </navigationItem>
                     <connections>
                         <outlet property="listView" destination="UJA-39-Uvg" id="APG-fx-X5W"/>
