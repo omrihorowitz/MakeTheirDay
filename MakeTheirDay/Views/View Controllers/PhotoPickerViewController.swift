@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 //MARK: - Protocol
 protocol PhotoPickerViewControllerDelegate: class {
     func photoPickerViewControllerSelected(image: UIImage)

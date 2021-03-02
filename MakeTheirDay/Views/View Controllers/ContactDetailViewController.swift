@@ -25,7 +25,6 @@ class ContactDetailViewController: UIViewController {
         addCancelKeyboardGestureRecognizer()
     }
     
-    
     //MARK: - Properties
     var contact: Contact? {
         didSet {

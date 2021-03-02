@@ -18,21 +18,13 @@ class ContactListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchAllContacts()
-        tableView.delegate = self
-        tableView.dataSource = self 
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        fetchAllContacts()
+        setupViews()
     }
     
     //MARK: - Actions
     
     @IBAction func refreshButtonTapped(_ sender: Any) {
-        fetchAllContacts()
-        startAnimation()
+        setupViews()
     }
     
     //MARK: - Methods
@@ -69,6 +61,13 @@ class ContactListViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             loading.stopAnimating()
         }
+    }
+    
+    func setupViews() {
+        self.fetchAllContacts()
+        startAnimation()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     // MARK: - Navigation

@@ -30,43 +30,12 @@ class GalaxyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageViews = [favoriteContactPic1, favoriteContactPic2, favoriteContactPic3, favoriteContactPic4, favoriteContactPic5]
-        fetchUser()
-        ContactController.sharedInstance.fetchContacts { (result) in
-            DispatchQueue.main.async {
-                switch result {
-                case .success:
-                    self.favoriteContacts = ContactController.sharedInstance.favoriteContacts()
-                    self.populateFavorites()
-                case .failure(let error):
-                    print(error)
-                }
-            }
-        }
         setupViews()
     }
-    
-    
+
     //MARK: - Actions
     
-    
     @IBAction func refreshButtonTapped(_ sender: Any) {
-        imageViews = [favoriteContactPic1, favoriteContactPic2, favoriteContactPic3, favoriteContactPic4, favoriteContactPic5]
-        fetchUser()
-        ContactController.sharedInstance.fetchContacts { (result) in
-            DispatchQueue.main.async {
-                switch result {
-                case .success:
-                    for (index,_) in self.favoriteContacts.enumerated() {
-                        self.imageViews[index].image = UIImage(named: "defaultcontactpic")
-                    }
-                    self.favoriteContacts = ContactController.sharedInstance.favoriteContacts()
-                    self.populateFavorites()
-                case .failure(let error):
-                    print(error)
-                }
-            }
-        }
         setupViews()
     }
     
@@ -120,6 +89,19 @@ class GalaxyViewController: UIViewController {
         favoriteContactPic5.layer.cornerRadius = favoriteContactPic5.frame.height / 2
         favoriteContactPic5.clipsToBounds = true
         favoriteContactPic5.alpha = 0.75
+        imageViews = [favoriteContactPic1, favoriteContactPic2, favoriteContactPic3, favoriteContactPic4, favoriteContactPic5]
+        fetchUser()
+        ContactController.sharedInstance.fetchContacts { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success:
+                    self.favoriteContacts = ContactController.sharedInstance.favoriteContacts()
+                    self.populateFavorites()
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
     }
     
     fileprivate func startAnimation() {

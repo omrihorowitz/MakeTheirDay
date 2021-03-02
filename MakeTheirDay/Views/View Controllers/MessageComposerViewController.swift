@@ -14,7 +14,6 @@ class MessageComposerViewController: UIViewController {
         super.viewDidLoad()
     }
     
-
     /*
     // MARK: - Navigation
 
