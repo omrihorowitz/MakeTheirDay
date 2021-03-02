@@ -19,11 +19,11 @@ class MyCircleSegmentedOptionsViewController: UIViewController {
     
     @IBAction func switchViews(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-            visualView.alpha = 1
-            listView.alpha = 0
+            visualView.isHidden = false
+            listView.isHidden = true
         } else {
-            visualView.alpha = 0
-            listView.alpha = 1
+            visualView.isHidden = true
+            listView.isHidden = false
         }
     }
 }

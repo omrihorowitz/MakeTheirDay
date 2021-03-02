@@ -9,13 +9,14 @@ import UIKit
 import NVActivityIndicatorView
 
 class GalaxyViewController: UIViewController {
-
+    
     //MARK: - Properties
     
     var selectedImage: UIImage?
+    var favoriteContacts: [Contact] = []
+    private var imageViews: [UIImageView] = []
     
     //MARK: - Outlets
-    
     
     @IBOutlet weak var favoriteContactPic1: UIImageView!
     @IBOutlet weak var favoriteContactPic2: UIImageView!
@@ -29,11 +30,45 @@ class GalaxyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageViews = [favoriteContactPic1, favoriteContactPic2, favoriteContactPic3, favoriteContactPic4, favoriteContactPic5]
         fetchUser()
+        ContactController.sharedInstance.fetchContacts { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success:
+                    self.favoriteContacts = ContactController.sharedInstance.favoriteContacts()
+                    self.populateFavorites()
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
         setupViews()
     }
-        
+    
+    
     //MARK: - Actions
+    
+    
+    @IBAction func refreshButtonTapped(_ sender: Any) {
+        imageViews = [favoriteContactPic1, favoriteContactPic2, favoriteContactPic3, favoriteContactPic4, favoriteContactPic5]
+        fetchUser()
+        ContactController.sharedInstance.fetchContacts { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success:
+                    for (index,_) in self.favoriteContacts.enumerated() {
+                        self.imageViews[index].image = UIImage(named: "defaultcontactpic")
+                    }
+                    self.favoriteContacts = ContactController.sharedInstance.favoriteContacts()
+                    self.populateFavorites()
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+        setupViews()
+    }
     
     @IBAction func credits(_ sender: Any) {
         let alert = UIAlertController(title: "Media Credits", message: "Photos from Unsplash\nMusic from Bensound", preferredStyle: .alert)
@@ -44,8 +79,6 @@ class GalaxyViewController: UIViewController {
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
-    
-   
     
     //MARK: - Functions
     
@@ -106,16 +139,22 @@ class GalaxyViewController: UIViewController {
             loading.stopAnimating()
         }
     }
-        
+    
+    func populateFavorites() {
+        for (index,favorite) in favoriteContacts.enumerated() {
+            imageViews[index].image = favorite.contactPhoto
+        }
+    }
+    
     // MARK: - Navigation
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPhotoPickerView" {
             let destinationVC = segue.destination as? PhotoPickerViewController
             destinationVC?.delegate = self
-            }
         }
     }
+}
 
 //MARK: - Extensions
 extension GalaxyViewController: PhotoPickerViewControllerDelegate {

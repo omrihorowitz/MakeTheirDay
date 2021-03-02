@@ -12,6 +12,7 @@ class ContactController {
     
     //MARK: - Properties
     var contacts: [Contact] = []
+    
     static let sharedInstance = ContactController()
     let privateDB = CKContainer.default().privateCloudDatabase
     
@@ -32,12 +33,16 @@ class ContactController {
             
             guard let contact = Contact(ckRecord: record) else {return completion(.failure(.unableToDecode))}
             
+            self.contacts.append(contact)
+            self.contacts = self.contacts.sorted(by: { $0.name.lowercased() < $1.name.lowercased() })
             return completion(.success(contact))
         }
     }
     
-    func fetchContacts(predicate: NSPredicate, completion: @escaping (Result<String, CustomError>) -> Void) {
+    func fetchContacts(completion: @escaping (Result<String, CustomError>) -> Void) {
         
+        let predicate = NSPredicate(value: true)
+
         let query = CKQuery(recordType: ContactStrings.recordTypeKey, predicate: predicate)
         
         privateDB.perform(query, inZoneWith: nil) { (records, error) in
@@ -103,4 +108,11 @@ class ContactController {
         }
         privateDB.add(deleteOperation)
     }
+    
+    func favoriteContacts() -> [Contact] {
+        contacts.filter {
+            $0.favorite
+        }
+    }
+    
 }//End of class

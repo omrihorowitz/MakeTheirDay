@@ -10,7 +10,7 @@ import UIKit
 class ContactDetailViewController: UIViewController {
     
     //MARK: - Outlets
-
+    
     @IBOutlet weak var contactPhotoContainer: UIView!
     @IBOutlet weak var contactPhoto: UIImageView!
     @IBOutlet weak var contactName: UITextField!
@@ -25,12 +25,14 @@ class ContactDetailViewController: UIViewController {
         addCancelKeyboardGestureRecognizer()
     }
     
+    
     //MARK: - Properties
     var contact: Contact? {
         didSet {
             loadViewIfNeeded()
             deleteContactButton.isHidden = false
-            updateUI()
+            //            updateUI()
+            isFavorite = contact!.favorite
         }
     }
     var isFavorite = false
@@ -38,11 +40,22 @@ class ContactDetailViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func favoriteButtonTapped(_ sender: Any) {
-        isFavorite.toggle()
-        if isFavorite {
-            favoriteButtonImage.setImage(UIImage(systemName: "star.fill"), for: .normal)
+        let favoriteArray = ContactController.sharedInstance.contacts.filter({$0.favorite})
+        if favoriteArray.count >= 5 && isFavorite == false {
+            let alert = UIAlertController(title: "Easy There, Cowboy!", message: "You can only mark 5 contacts as favorites.", preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alert.addAction(action)
+            
+            present(alert, animated: true)
         } else {
-            favoriteButtonImage.setImage(UIImage(systemName: "star"), for: .normal)
+            self.isFavorite.toggle()
+            if self.isFavorite {
+                self.favoriteButtonImage.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            } else {
+                self.favoriteButtonImage.setImage(UIImage(systemName: "star"), for: .normal)
+            }
         }
     }
     
@@ -54,13 +67,13 @@ class ContactDetailViewController: UIViewController {
         guard let name = contactName.text, !name.isEmpty,
               let spokenStatus = lastInTouch.text, !spokenStatus.isEmpty,
               let contactPhoto = selectedImage else {self.presentTextFieldAlertController() ; return
-    }
-
+        }
+        
         if let contact = contact {
             ContactController.sharedInstance.updateContact(contact: contact, name: name, lastInTouch: spokenStatus, favorite: isFavorite, contactPhoto: contactPhoto) { (result) in
                 self.switchOnResult(result)
             }
-
+            
         } else {
             ContactController.sharedInstance.saveContact(name: name, lastInTouch: spokenStatus, favorite: isFavorite, contactPhoto: contactPhoto) { (result) in
                 self.switchOnResult(result)
@@ -68,74 +81,75 @@ class ContactDetailViewController: UIViewController {
         }
         navigationController?.popViewController(animated: true)
     }
-
-//MARK: - Methods
-func updateUI() {
-    guard let contact = contact else {return}
-    contactName.text = contact.name
-    contactPhoto.image = contact.contactPhoto
-    lastInTouch.text = contact.lastInTouch
-}
-
-func switchOnResult(_ result: Result<Contact, CustomError>) {
-    DispatchQueue.main.async {
-        switch result {
-        case .success(_):
-            self.navigationController?.popViewController(animated: true)
-
-        case .failure(let error):
-            self.presentErrorToUser(localizedError: error)
-        }
+    
+    //MARK: - Methods
+    func updateUI() {
+        guard let contact = contact else {return}
+        contactName.text = contact.name
+        contactPhoto.image = contact.contactPhoto
+        lastInTouch.text = contact.lastInTouch
+        favoriteButtonImage.setImage(contact.favorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star"), for: .normal)
     }
-}
-
-func presentTextFieldAlertController() {
-    let alert = UIAlertController(title: "Make sure to fill your contact info!", message: "Name and photo plz :P", preferredStyle: .alert)
-
-    let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-
-    alert.addAction(action)
-
-    present(alert, animated: true)
-}
-
-func presentDeleteButtonAlertController() {
-    let alert = UIAlertController(title: "Delete Contact", message: "You sure?", preferredStyle: .alert)
-
-    let cancelAction = UIAlertAction(title: "No", style: .default, handler: nil)
-
-    let confirmAction = UIAlertAction(title: "Bye, Felicia", style: .destructive) { (_) in
-
-        guard let contact = self.contact else {return}
-
-        ContactController.sharedInstance.delete(contact: contact) { (result) in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(_):
-                    print("Contact \(contact.name) successfully deleted.")
-                    self.navigationController?.popViewController(animated: true)
-
-                case .failure(let error):
-                    self.presentErrorToUser(localizedError: error)
-                }
+    
+    func switchOnResult(_ result: Result<Contact, CustomError>) {
+        DispatchQueue.main.async {
+            switch result {
+            case .success(_):
+                self.navigationController?.popViewController(animated: true)
+                
+            case .failure(let error):
+                self.presentErrorToUser(localizedError: error)
             }
         }
     }
-
-    alert.addAction(cancelAction)
-    alert.addAction(confirmAction)
-
-    self.present(alert, animated: true)
-}
-
-// MARK: - Navigation
-override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "toPhotoPickerView" {
-        let destinationVC = segue.destination as? PhotoPickerViewController
-        destinationVC?.delegate = self
-        guard let photo = self.contact?.contactPhoto else {return}
-        destinationVC?.photo = self.contact?.contactPhoto
-        self.selectedImage = photo
+    
+    func presentTextFieldAlertController() {
+        let alert = UIAlertController(title: "Fill out all Contact info!", message: "Name and photo plz :P", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true)
+    }
+    
+    func presentDeleteButtonAlertController() {
+        let alert = UIAlertController(title: "Delete Contact", message: "You sure?", preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "No", style: .default, handler: nil)
+        
+        let confirmAction = UIAlertAction(title: "Bye, Felicia", style: .destructive) { (_) in
+            
+            guard let contact = self.contact else {return}
+            
+            ContactController.sharedInstance.delete(contact: contact) { (result) in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(_):
+                        print("Contact \(contact.name) successfully deleted.")
+                        self.navigationController?.popViewController(animated: true)
+                        
+                    case .failure(let error):
+                        self.presentErrorToUser(localizedError: error)
+                    }
+                }
+            }
+        }
+        
+        alert.addAction(cancelAction)
+        alert.addAction(confirmAction)
+        
+        self.present(alert, animated: true)
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toPhotoPickerView" {
+            let destinationVC = segue.destination as? PhotoPickerViewController
+            destinationVC?.delegate = self
+            guard let photo = self.contact?.contactPhoto else {return}
+            destinationVC?.photo = self.contact?.contactPhoto
+            self.selectedImage = photo
         }
     }
 }
@@ -143,6 +157,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //MARK: - Extensions
 extension ContactDetailViewController: PhotoPickerViewControllerDelegate {
     func photoPickerViewControllerSelected(image: UIImage) {
+        contactPhoto.image = image
         selectedImage = image
     }
 }

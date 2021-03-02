@@ -18,13 +18,14 @@ class ContactListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchAllContacts()
         tableView.delegate = self
         tableView.dataSource = self 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.tableView.reloadData()
+        fetchAllContacts()
     }
     
     //MARK: - Actions
@@ -36,10 +37,8 @@ class ContactListViewController: UIViewController {
     
     //MARK: - Methods
     func fetchAllContacts() {
-        
-        let predicate = NSPredicate(value: true)
-        
-        ContactController.sharedInstance.fetchContacts(predicate: predicate) { (result) in
+                
+        ContactController.sharedInstance.fetchContacts { (result) in
             
             switch result {
             case .success(let success):
@@ -73,8 +72,7 @@ class ContactListViewController: UIViewController {
     }
     
     // MARK: - Navigation
-    func prepare(for segue: UIStoryboardSegue, sender: ContactTableViewCell?) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailVC" {
             guard let indexPath = tableView.indexPathForSelectedRow,
                   let destinationVC = segue.destination as? ContactDetailViewController else {return}
