@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		361317BA2630D61DA4906ACD /* Pods_MakeTheirDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91318669275CEB717E20A0C /* Pods_MakeTheirDay.framework */; };
+		6C06034B25EF06CE00F73F2D /* SoCold.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C06034A25EF06CE00F73F2D /* SoCold.wav */; };
 		6C1210CA25DD8543009AA4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210C925DD8543009AA4F4 /* AppDelegate.swift */; };
 		6C1210CC25DD8543009AA4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210CB25DD8543009AA4F4 /* SceneDelegate.swift */; };
 		6C1210D125DD8543009AA4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1210CF25DD8543009AA4F4 /* Main.storyboard */; };
 		6C1210D325DD8544009AA4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1210D225DD8544009AA4F4 /* Assets.xcassets */; };
 		6C1210D625DD8544009AA4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1210D425DD8544009AA4F4 /* LaunchScreen.storyboard */; };
 		6C1210E825DE31B8009AA4F4 /* InspirationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210E725DE31B8009AA4F4 /* InspirationTableViewController.swift */; };
-		6C1210EC25DE31E4009AA4F4 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210EB25DE31E4009AA4F4 /* MessagesTableViewController.swift */; };
 		6C1210EF25DE321E009AA4F4 /* MessageComposerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */; };
 		6C1210F225DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210F125DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift */; };
 		6C12110125DE34F2009AA4F4 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110025DE34F2009AA4F4 /* Contact.swift */; };
 		6C12110425DE350E009AA4F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110325DE350E009AA4F4 /* User.swift */; };
 		6C12110A25DE35A2009AA4F4 /* InspirationPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110925DE35A2009AA4F4 /* InspirationPostTableViewCell.swift */; };
-		6C12110E25DE361C009AA4F4 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12110D25DE361C009AA4F4 /* MessageTableViewCell.swift */; };
 		6C12111125DE3657009AA4F4 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111025DE3657009AA4F4 /* ContactTableViewCell.swift */; };
 		6C12111425DE36AE009AA4F4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111325DE36AE009AA4F4 /* Message.swift */; };
 		6C12111725DE370E009AA4F4 /* InspirationPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111625DE370E009AA4F4 /* InspirationPost.swift */; };
@@ -39,7 +38,6 @@
 		6C9E5CFC25E7148D00A29B36 /* Second400Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5CFB25E7148D00A29B36 /* Second400Quotes.swift */; };
 		6C9E5CFF25E7149600A29B36 /* Third400Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5CFE25E7149600A29B36 /* Third400Quotes.swift */; };
 		6C9E5D0225E7149F00A29B36 /* Fourth400Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5D0125E7149F00A29B36 /* Fourth400Quotes.swift */; };
-		6C9E5D4225E76E6A00A29B36 /* AllThat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C9E5D4125E76E6A00A29B36 /* AllThat.mp3 */; };
 		6C9E5D4725E8161300A29B36 /* GalaxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5D4625E8161300A29B36 /* GalaxyViewController.swift */; };
 		6C9E5D4A25E8162F00A29B36 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5D4925E8162F00A29B36 /* ContactListViewController.swift */; };
 		6CCBA1F725E85E2A00B433A7 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBA1F625E85E2A00B433A7 /* ContactDetailViewController.swift */; };
@@ -49,6 +47,7 @@
 /* Begin PBXFileReference section */
 		1F0C6B14BCA08183FE1240FB /* Pods-MakeTheirDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeTheirDay.debug.xcconfig"; path = "Target Support Files/Pods-MakeTheirDay/Pods-MakeTheirDay.debug.xcconfig"; sourceTree = "<group>"; };
 		2E88E2C19411AA08C5D495C8 /* Pods-MakeTheirDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeTheirDay.release.xcconfig"; path = "Target Support Files/Pods-MakeTheirDay/Pods-MakeTheirDay.release.xcconfig"; sourceTree = "<group>"; };
+		6C06034A25EF06CE00F73F2D /* SoCold.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SoCold.wav; sourceTree = "<group>"; };
 		6C1210C625DD8543009AA4F4 /* MakeTheirDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeTheirDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C1210C925DD8543009AA4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C1210CB25DD8543009AA4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,13 +56,11 @@
 		6C1210D525DD8544009AA4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C1210D725DD8544009AA4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C1210E725DE31B8009AA4F4 /* InspirationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationTableViewController.swift; sourceTree = "<group>"; };
-		6C1210EB25DE31E4009AA4F4 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposerViewController.swift; sourceTree = "<group>"; };
 		6C1210F125DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleSegmentedOptionsViewController.swift; sourceTree = "<group>"; };
 		6C12110025DE34F2009AA4F4 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		6C12110325DE350E009AA4F4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6C12110925DE35A2009AA4F4 /* InspirationPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationPostTableViewCell.swift; sourceTree = "<group>"; };
-		6C12110D25DE361C009AA4F4 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		6C12111025DE3657009AA4F4 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		6C12111325DE36AE009AA4F4 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		6C12111625DE370E009AA4F4 /* InspirationPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationPost.swift; sourceTree = "<group>"; };
@@ -83,7 +80,6 @@
 		6C9E5CFB25E7148D00A29B36 /* Second400Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second400Quotes.swift; sourceTree = "<group>"; };
 		6C9E5CFE25E7149600A29B36 /* Third400Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Third400Quotes.swift; sourceTree = "<group>"; };
 		6C9E5D0125E7149F00A29B36 /* Fourth400Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fourth400Quotes.swift; sourceTree = "<group>"; };
-		6C9E5D4125E76E6A00A29B36 /* AllThat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AllThat.mp3; sourceTree = "<group>"; };
 		6C9E5D4625E8161300A29B36 /* GalaxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyViewController.swift; sourceTree = "<group>"; };
 		6C9E5D4925E8162F00A29B36 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		6CCBA1F625E85E2A00B433A7 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
@@ -138,7 +134,7 @@
 		6C1210DE25DD86B8009AA4F4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6C9E5D4125E76E6A00A29B36 /* AllThat.mp3 */,
+				6C06034A25EF06CE00F73F2D /* SoCold.wav */,
 				6C1210C925DD8543009AA4F4 /* AppDelegate.swift */,
 				6C1210CB25DD8543009AA4F4 /* SceneDelegate.swift */,
 				6C1210D225DD8544009AA4F4 /* Assets.xcassets */,
@@ -183,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				6C1210E725DE31B8009AA4F4 /* InspirationTableViewController.swift */,
-				6C1210EB25DE31E4009AA4F4 /* MessagesTableViewController.swift */,
 				6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */,
 				6C1210F125DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift */,
 				6C9E5D4625E8161300A29B36 /* GalaxyViewController.swift */,
@@ -220,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				6C12110925DE35A2009AA4F4 /* InspirationPostTableViewCell.swift */,
-				6C12110D25DE361C009AA4F4 /* MessageTableViewCell.swift */,
 				6C12111025DE3657009AA4F4 /* ContactTableViewCell.swift */,
 			);
 			path = "Cusom Cells";
@@ -316,9 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C1210D625DD8544009AA4F4 /* LaunchScreen.storyboard in Resources */,
+				6C06034B25EF06CE00F73F2D /* SoCold.wav in Resources */,
 				6C1210D325DD8544009AA4F4 /* Assets.xcassets in Resources */,
 				6C1210D125DD8543009AA4F4 /* Main.storyboard in Resources */,
-				6C9E5D4225E76E6A00A29B36 /* AllThat.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,14 +378,12 @@
 				6C9E5CFF25E7149600A29B36 /* Third400Quotes.swift in Sources */,
 				6C1210EF25DE321E009AA4F4 /* MessageComposerViewController.swift in Sources */,
 				6C12112325DE376F009AA4F4 /* InspirationPostController.swift in Sources */,
-				6C12110E25DE361C009AA4F4 /* MessageTableViewCell.swift in Sources */,
 				6C1210F225DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift in Sources */,
 				6CCBA1F725E85E2A00B433A7 /* ContactDetailViewController.swift in Sources */,
 				6C9E5CF625E7146200A29B36 /* QuoteList.swift in Sources */,
 				6C2DDBD925E972D500DD5FA5 /* UserController.swift in Sources */,
 				6C9E5CF925E7148200A29B36 /* First400Quotes.swift in Sources */,
 				6C2DDBD525E89E2800DD5FA5 /* UIViewControllerExtension.swift in Sources */,
-				6C1210EC25DE31E4009AA4F4 /* MessagesTableViewController.swift in Sources */,
 				6C1210E825DE31B8009AA4F4 /* InspirationTableViewController.swift in Sources */,
 				6C76AFDF25E5906500967291 /* CustomError.swift in Sources */,
 				6C12111725DE370E009AA4F4 /* InspirationPost.swift in Sources */,

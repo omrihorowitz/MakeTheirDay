@@ -19,6 +19,7 @@ class ContactListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        
     }
     
     //MARK: - Actions

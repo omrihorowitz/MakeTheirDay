@@ -30,7 +30,6 @@ class ContactDetailViewController: UIViewController {
         didSet {
             loadViewIfNeeded()
             deleteContactButton.isHidden = false
-            //            updateUI()
             isFavorite = contact!.favorite
         }
     }

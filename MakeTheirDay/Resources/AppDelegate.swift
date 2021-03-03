@@ -20,23 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var player: AVAudioPlayer?
     
-//    func playMusic() {
-//        guard let url = Bundle.main.url(forResource: "AllThat", withExtension: "mp3") else { return }
-//
-//        do {
-//            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-//            try AVAudioSession.sharedInstance().setActive(true)
-//
-//            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-//
-//            guard let player = player else { return }
-//
-//            player.play()
-//            player.numberOfLoops = -1
-//        } catch let error {
-//            print(error.localizedDescription)
-//        }
-//    }
+    func playMusic() {
+        guard let url = Bundle.main.url(forResource: "SoCold", withExtension: "wav") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+            player.numberOfLoops = -1
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
 
     // MARK: UISceneSession Lifecycle
 
