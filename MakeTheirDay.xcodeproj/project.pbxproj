@@ -28,7 +28,6 @@
 		6C12112325DE376F009AA4F4 /* InspirationPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112225DE376F009AA4F4 /* InspirationPostController.swift */; };
 		6C12112725DE3943009AA4F4 /* VideoRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112625DE3943009AA4F4 /* VideoRecord.swift */; };
 		6C12112A25DE394E009AA4F4 /* AudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112925DE394E009AA4F4 /* AudioRecord.swift */; };
-		6C12112D25DE395D009AA4F4 /* ShareMessageToSend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112C25DE395D009AA4F4 /* ShareMessageToSend.swift */; };
 		6C2DDBD525E89E2800DD5FA5 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DDBD425E89E2800DD5FA5 /* UIViewControllerExtension.swift */; };
 		6C2DDBD925E972D500DD5FA5 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DDBD825E972D500DD5FA5 /* UserController.swift */; };
 		6C48588125E4320800DD2932 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C48588025E4320800DD2932 /* CloudKit.framework */; };
@@ -69,7 +68,6 @@
 		6C12112225DE376F009AA4F4 /* InspirationPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationPostController.swift; sourceTree = "<group>"; };
 		6C12112625DE3943009AA4F4 /* VideoRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecord.swift; sourceTree = "<group>"; };
 		6C12112925DE394E009AA4F4 /* AudioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecord.swift; sourceTree = "<group>"; };
-		6C12112C25DE395D009AA4F4 /* ShareMessageToSend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareMessageToSend.swift; sourceTree = "<group>"; };
 		6C2DDBD425E89E2800DD5FA5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		6C2DDBD825E972D500DD5FA5 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		6C48587D25E431F500DD2932 /* MakeTheirDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MakeTheirDay.entitlements; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 			children = (
 				6C12112625DE3943009AA4F4 /* VideoRecord.swift */,
 				6C12112925DE394E009AA4F4 /* AudioRecord.swift */,
-				6C12112C25DE395D009AA4F4 /* ShareMessageToSend.swift */,
 				6C76AFDE25E5906500967291 /* CustomError.swift */,
 				6C2DDBD425E89E2800DD5FA5 /* UIViewControllerExtension.swift */,
 			);
@@ -366,7 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CCBA1FA25E870A400B433A7 /* PhotoPickerViewController.swift in Sources */,
-				6C12112D25DE395D009AA4F4 /* ShareMessageToSend.swift in Sources */,
 				6C12111125DE3657009AA4F4 /* ContactTableViewCell.swift in Sources */,
 				6C12112025DE3766009AA4F4 /* MessageController.swift in Sources */,
 				6C12112A25DE394E009AA4F4 /* AudioRecord.swift in Sources */,
