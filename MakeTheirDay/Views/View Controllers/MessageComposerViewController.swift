@@ -17,7 +17,7 @@ class MessageComposerViewController: UIViewController, UIPickerViewDataSource, U
     
     @IBOutlet weak var messageTextView: UITextView!
     
-    //MARK: - SOT
+    //MARK: - Properties
     
     var recordButton: UIButton!
     var recordingSession: AVAudioSession!
@@ -54,9 +54,8 @@ class MessageComposerViewController: UIViewController, UIPickerViewDataSource, U
     
     @IBAction func shareMessage(_ sender: Any) {
         let shareText = [messageTextView.text]
-//        let shareAudio:URL = URL(string: "maketheirdayrecording.m4a")!
-//        figure out if right file path and if can send. does it need to be m4a or can be mp3?
-        let ac = UIActivityViewController(activityItems: [shareText, shareAudio], applicationActivities: nil)
+//        let shareAudio =
+        let ac = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
         present(ac, animated: true)
     }
     
@@ -134,4 +133,6 @@ class MessageComposerViewController: UIViewController, UIPickerViewDataSource, U
             finishRecording(success: false)
         }
     }
+    
+    
 }

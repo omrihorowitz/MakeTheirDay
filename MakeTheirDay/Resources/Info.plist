@@ -4,14 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Allow Camera Access for Photos or Video</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Please Allow Access to Photo Library for Pictures</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Please Allow Access to Microphone to Record Audio</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,8 +18,16 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow Camera Access for Photos or Video</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Please Allow Access to Microphone to Record Audio</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please Allow Access to Photo Library for Pictures</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -50,7 +50,7 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<string>Launch Screen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -82,6 +82,8 @@ class ContactDetailViewController: UIViewController {
     
     //MARK: - Methods
     func updateUI() {
+        contactName.autocapitalizationType = .sentences
+        lastInTouch.autocapitalizationType = .sentences
         guard let contact = contact else {return}
         contactName.text = contact.name
         contactPhoto.image = contact.contactPhoto

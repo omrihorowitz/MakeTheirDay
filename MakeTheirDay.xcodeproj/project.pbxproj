@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,6 @@
 		6C1210CC25DD8543009AA4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210CB25DD8543009AA4F4 /* SceneDelegate.swift */; };
 		6C1210D125DD8543009AA4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1210CF25DD8543009AA4F4 /* Main.storyboard */; };
 		6C1210D325DD8544009AA4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1210D225DD8544009AA4F4 /* Assets.xcassets */; };
-		6C1210D625DD8544009AA4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1210D425DD8544009AA4F4 /* LaunchScreen.storyboard */; };
 		6C1210E825DE31B8009AA4F4 /* InspirationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210E725DE31B8009AA4F4 /* InspirationTableViewController.swift */; };
 		6C1210EF25DE321E009AA4F4 /* MessageComposerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */; };
 		6C1210F225DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210F125DE3277009AA4F4 /* MyCircleSegmentedOptionsViewController.swift */; };
@@ -26,10 +25,9 @@
 		6C12111A25DE3754009AA4F4 /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111925DE3754009AA4F4 /* ContactController.swift */; };
 		6C12112025DE3766009AA4F4 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12111F25DE3766009AA4F4 /* MessageController.swift */; };
 		6C12112325DE376F009AA4F4 /* InspirationPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112225DE376F009AA4F4 /* InspirationPostController.swift */; };
-		6C12112725DE3943009AA4F4 /* VideoRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112625DE3943009AA4F4 /* VideoRecord.swift */; };
-		6C12112A25DE394E009AA4F4 /* AudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12112925DE394E009AA4F4 /* AudioRecord.swift */; };
 		6C2DDBD525E89E2800DD5FA5 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DDBD425E89E2800DD5FA5 /* UIViewControllerExtension.swift */; };
 		6C2DDBD925E972D500DD5FA5 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DDBD825E972D500DD5FA5 /* UserController.swift */; };
+		6C3CC47625EF6D1C00A2CF10 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3CC47525EF6D1C00A2CF10 /* Launch Screen.storyboard */; };
 		6C48588125E4320800DD2932 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C48588025E4320800DD2932 /* CloudKit.framework */; };
 		6C76AFDF25E5906500967291 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76AFDE25E5906500967291 /* CustomError.swift */; };
 		6C9E5CF625E7146200A29B36 /* QuoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E5CF525E7146200A29B36 /* QuoteList.swift */; };
@@ -52,7 +50,6 @@
 		6C1210CB25DD8543009AA4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6C1210D025DD8543009AA4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C1210D225DD8544009AA4F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6C1210D525DD8544009AA4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C1210D725DD8544009AA4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C1210E725DE31B8009AA4F4 /* InspirationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationTableViewController.swift; sourceTree = "<group>"; };
 		6C1210EE25DE321E009AA4F4 /* MessageComposerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposerViewController.swift; sourceTree = "<group>"; };
@@ -66,10 +63,9 @@
 		6C12111925DE3754009AA4F4 /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		6C12111F25DE3766009AA4F4 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		6C12112225DE376F009AA4F4 /* InspirationPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationPostController.swift; sourceTree = "<group>"; };
-		6C12112625DE3943009AA4F4 /* VideoRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecord.swift; sourceTree = "<group>"; };
-		6C12112925DE394E009AA4F4 /* AudioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecord.swift; sourceTree = "<group>"; };
 		6C2DDBD425E89E2800DD5FA5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		6C2DDBD825E972D500DD5FA5 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		6C3CC47525EF6D1C00A2CF10 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		6C48587D25E431F500DD2932 /* MakeTheirDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MakeTheirDay.entitlements; sourceTree = "<group>"; };
 		6C48588025E4320800DD2932 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		6C76AFDE25E5906500967291 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
@@ -145,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				6C1210CF25DD8543009AA4F4 /* Main.storyboard */,
-				6C1210D425DD8544009AA4F4 /* LaunchScreen.storyboard */,
+				6C3CC47525EF6D1C00A2CF10 /* Launch Screen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -190,8 +186,6 @@
 		6C1210FA25DE33AF009AA4F4 /* Helpers & Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6C12112625DE3943009AA4F4 /* VideoRecord.swift */,
-				6C12112925DE394E009AA4F4 /* AudioRecord.swift */,
 				6C76AFDE25E5906500967291 /* CustomError.swift */,
 				6C2DDBD425E89E2800DD5FA5 /* UIViewControllerExtension.swift */,
 			);
@@ -284,7 +278,7 @@
 				};
 			};
 			buildConfigurationList = 6C1210C125DD8543009AA4F4 /* Build configuration list for PBXProject "MakeTheirDay" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -306,9 +300,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C1210D625DD8544009AA4F4 /* LaunchScreen.storyboard in Resources */,
 				6C06034B25EF06CE00F73F2D /* SoCold.wav in Resources */,
 				6C1210D325DD8544009AA4F4 /* Assets.xcassets in Resources */,
+				6C3CC47625EF6D1C00A2CF10 /* Launch Screen.storyboard in Resources */,
 				6C1210D125DD8543009AA4F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,7 +359,6 @@
 				6CCBA1FA25E870A400B433A7 /* PhotoPickerViewController.swift in Sources */,
 				6C12111125DE3657009AA4F4 /* ContactTableViewCell.swift in Sources */,
 				6C12112025DE3766009AA4F4 /* MessageController.swift in Sources */,
-				6C12112A25DE394E009AA4F4 /* AudioRecord.swift in Sources */,
 				6C1210CA25DD8543009AA4F4 /* AppDelegate.swift in Sources */,
 				6C12111A25DE3754009AA4F4 /* ContactController.swift in Sources */,
 				6C12110125DE34F2009AA4F4 /* Contact.swift in Sources */,
@@ -388,7 +381,6 @@
 				6C12110A25DE35A2009AA4F4 /* InspirationPostTableViewCell.swift in Sources */,
 				6C9E5D4A25E8162F00A29B36 /* ContactListViewController.swift in Sources */,
 				6C9E5CFC25E7148D00A29B36 /* Second400Quotes.swift in Sources */,
-				6C12112725DE3943009AA4F4 /* VideoRecord.swift in Sources */,
 				6C12111425DE36AE009AA4F4 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,14 +394,6 @@
 				6C1210D025DD8543009AA4F4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6C1210D425DD8544009AA4F4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C1210D525DD8544009AA4F4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

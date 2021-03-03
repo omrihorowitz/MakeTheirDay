@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0U-VK-NP9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1859" y="1148"/>
+            <point key="canvasLocation" x="-977" y="1148"/>
         </scene>
         <!--Message Composer-->
         <scene sceneID="8GC-q1-hbk">
@@ -121,6 +121,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aAy-eJ-fIS"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="15"/>
                                 <color key="tintColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Share and Send">
                                     <color key="titleColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -160,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzS-fJ-ikI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-349.06542056074767" y="516.7386609071275"/>
+            <point key="canvasLocation" x="534" y="517"/>
         </scene>
         <!--Sunshine & Inspiration-->
         <scene sceneID="SyL-32-azR">
@@ -301,7 +302,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKB-ZY-VMl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1961" y="-844"/>
+            <point key="canvasLocation" x="-1078" y="-844"/>
         </scene>
         <!--My Circle-->
         <scene sceneID="vYA-J7-fF3">
@@ -367,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNU-XM-DTr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1962.3188405797102" y="-102.45535714285714"/>
+            <point key="canvasLocation" x="-1079" y="-103"/>
         </scene>
         <!--Galaxy View Controller-->
         <scene sceneID="nmB-ui-SjU">
@@ -531,7 +532,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xl4-jw-7dN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2460.2803738317757" y="518.03455723542118"/>
+            <point key="canvasLocation" x="-1577" y="518"/>
         </scene>
         <!--Contact List View Controller-->
         <scene sceneID="kEz-mH-IWj">
@@ -563,7 +564,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="136"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Spoken:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1m-U5-bQZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Last Spoken:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1m-U5-bQZ">
                                                     <rect key="frame" x="160" y="55.333333333333336" width="114" height="31.333333333333336"/>
                                                     <color key="backgroundColor" red="0.46274507050000002" green="0.54901963470000004" blue="0.79607844350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="13"/>
@@ -580,7 +581,7 @@
                                                     <color key="textColor" red="0.71372550729999995" green="0.86666667460000002" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="(couple of weeks)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OC-g2-A3Y">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(couple of weeks)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OC-g2-A3Y">
                                                     <rect key="frame" x="282" y="56" width="126" height="30"/>
                                                     <color key="backgroundColor" red="0.46274507050000002" green="0.54901963470000004" blue="0.79607844350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
@@ -726,7 +727,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l4s-Ka-pIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1860.2803738317757" y="518.03455723542118"/>
+            <point key="canvasLocation" x="-977" y="518"/>
         </scene>
         <!--Contact Detail View Controller-->
         <scene sceneID="JpG-TU-UhB">
@@ -891,11 +892,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohC-G6-L9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1120.2898550724638" y="517.96875"/>
+            <point key="canvasLocation" x="-238" y="517"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4Uy-Af-KOB"/>
+        <segue reference="tMQ-0t-d5F"/>
         <segue reference="wgF-ow-V4H"/>
     </inferredMetricsTieBreakers>
     <resources>
