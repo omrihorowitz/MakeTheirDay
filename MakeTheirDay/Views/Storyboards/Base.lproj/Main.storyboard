@@ -35,15 +35,15 @@
             <objects>
                 <viewController id="XeD-RZ-tes" customClass="PhotoPickerViewController" customModule="MakeTheirDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YkK-Nr-U4B">
-                        <rect key="frame" x="0.0" y="0.0" width="918" height="665.33333333333337"/>
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zbX-iQ-PAb">
-                                <rect key="frame" x="0.0" y="0.0" width="918" height="631.33333333333337"/>
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.18424048013245028" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hD-7s-KxD">
-                                <rect key="frame" x="0.0" y="0.0" width="918" height="631.33333333333337"/>
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="15"/>
                                 <state key="normal" title="Select Image">
                                     <color key="titleColor" red="0.8392156959" green="0.69411766529999996" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -109,47 +109,82 @@
                             </textView>
                             <pickerView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="S7g-NK-SdD">
                                 <rect key="frame" x="0.0" y="107.66666666666669" width="428" height="78"/>
-                                <color key="backgroundColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.43921568989999998" green="0.55294120309999995" blue="0.81960785390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="78" id="8Vl-Lv-WZT"/>
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaG-on-aWG">
-                                <rect key="frame" x="148" y="521" width="132" height="50"/>
-                                <color key="backgroundColor" red="0.43921568989999998" green="0.55294120309999995" blue="0.81960785390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="176" y="378" width="76" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="aAy-eJ-fIS"/>
+                                    <constraint firstAttribute="height" constant="50" id="Wzn-Dn-Hfp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="15"/>
                                 <color key="tintColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Share and Send">
+                                <state key="normal" title="Share Text">
                                     <color key="titleColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="shareMessage:" destination="3BF-MD-b67" eventType="touchUpInside" id="u2B-hB-FLn"/>
+                                    <action selector="shareText:" destination="3BF-MD-b67" eventType="touchUpInside" id="u2B-hB-FLn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35P-dI-Npo">
+                                <rect key="frame" x="20" y="435" width="99" height="50"/>
+                                <color key="backgroundColor" red="0.43921568989999998" green="0.55294120309999995" blue="0.81960785390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8wj-LP-Ftk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="oy0-7C-3Fm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="15"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Record Audio">
+                                    <color key="titleColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordAudio:" destination="3BF-MD-b67" eventType="touchUpInside" id="boR-Td-aCJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQt-Yg-No2">
+                                <rect key="frame" x="319" y="434" width="89" height="50"/>
+                                <color key="backgroundColor" red="0.43921568989999998" green="0.55294120309999995" blue="0.81960785390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oYo-fE-Cvi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="15"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Share Audio">
+                                    <color key="titleColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareAudio:" destination="3BF-MD-b67" eventType="touchUpInside" id="SM2-we-evc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J3j-Ph-MUH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NaG-on-aWG" firstAttribute="leading" secondItem="J3j-Ph-MUH" secondAttribute="leading" constant="148" id="6sY-Ic-Qo2"/>
-                            <constraint firstItem="NaG-on-aWG" firstAttribute="centerX" secondItem="Pb4-mn-xeC" secondAttribute="centerX" id="81z-g5-eXC"/>
                             <constraint firstItem="Pb4-mn-xeC" firstAttribute="leading" secondItem="Zt4-IX-KZz" secondAttribute="leadingMargin" id="8em-Zo-cNM"/>
                             <constraint firstItem="Pb4-mn-xeC" firstAttribute="top" secondItem="S7g-NK-SdD" secondAttribute="bottom" constant="8" symbolic="YES" id="9o4-ed-IN8"/>
+                            <constraint firstItem="fQt-Yg-No2" firstAttribute="trailing" secondItem="Pb4-mn-xeC" secondAttribute="trailing" id="Cho-eq-pry"/>
                             <constraint firstAttribute="bottom" secondItem="gef-M9-eep" secondAttribute="bottom" id="Doz-eq-LhX"/>
                             <constraint firstItem="9SM-S9-EQN" firstAttribute="trailing" secondItem="gef-M9-eep" secondAttribute="trailing" id="EQK-Qw-fVL"/>
-                            <constraint firstItem="J3j-Ph-MUH" firstAttribute="bottom" secondItem="NaG-on-aWG" secondAttribute="bottom" constant="81" id="EYA-Ys-0jT"/>
+                            <constraint firstItem="NaG-on-aWG" firstAttribute="centerX" secondItem="Pb4-mn-xeC" secondAttribute="centerX" id="Ipc-ik-X5t"/>
+                            <constraint firstItem="35P-dI-Npo" firstAttribute="top" secondItem="Pb4-mn-xeC" secondAttribute="bottom" constant="6.3333333333333712" id="Ly2-fD-n9r"/>
+                            <constraint firstItem="35P-dI-Npo" firstAttribute="leading" secondItem="Pb4-mn-xeC" secondAttribute="leading" id="SUY-Al-8Rl"/>
                             <constraint firstItem="gef-M9-eep" firstAttribute="leading" secondItem="J3j-Ph-MUH" secondAttribute="leading" id="SoJ-pK-tDo"/>
                             <constraint firstItem="S7g-NK-SdD" firstAttribute="leading" secondItem="9SM-S9-EQN" secondAttribute="leading" id="SsO-MU-Qxr"/>
                             <constraint firstItem="S7g-NK-SdD" firstAttribute="trailing" secondItem="9SM-S9-EQN" secondAttribute="trailing" id="TlE-dq-P0d"/>
                             <constraint firstItem="gef-M9-eep" firstAttribute="top" secondItem="Zt4-IX-KZz" secondAttribute="top" id="VIS-jw-7JU"/>
                             <constraint firstItem="gef-M9-eep" firstAttribute="leading" secondItem="9SM-S9-EQN" secondAttribute="leading" id="WpO-vI-GDL"/>
-                            <constraint firstItem="NaG-on-aWG" firstAttribute="top" secondItem="Pb4-mn-xeC" secondAttribute="bottom" constant="92.333333333333371" id="a3R-9K-mut"/>
+                            <constraint firstItem="fQt-Yg-No2" firstAttribute="top" secondItem="Pb4-mn-xeC" secondAttribute="bottom" constant="5.3333333333333712" id="YE8-ER-d5W"/>
+                            <constraint firstItem="fQt-Yg-No2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="35P-dI-Npo" secondAttribute="trailing" constant="8" symbolic="YES" id="ca7-ch-xsB"/>
                             <constraint firstItem="S7g-NK-SdD" firstAttribute="top" secondItem="9SM-S9-EQN" secondAttribute="bottom" constant="7.6666666666666714" id="fFF-pJ-UHZ"/>
+                            <constraint firstItem="J3j-Ph-MUH" firstAttribute="bottom" secondItem="NaG-on-aWG" secondAttribute="bottom" constant="224" id="hbb-xO-7Bh"/>
                             <constraint firstItem="J3j-Ph-MUH" firstAttribute="trailing" secondItem="Pb4-mn-xeC" secondAttribute="trailing" constant="20" id="hwD-lv-YFm"/>
+                            <constraint firstItem="J3j-Ph-MUH" firstAttribute="bottom" secondItem="fQt-Yg-No2" secondAttribute="bottom" constant="168" id="mqH-hT-Zcb"/>
                             <constraint firstItem="gef-M9-eep" firstAttribute="trailing" secondItem="J3j-Ph-MUH" secondAttribute="trailing" id="q1r-ma-ShP"/>
+                            <constraint firstItem="J3j-Ph-MUH" firstAttribute="bottom" secondItem="35P-dI-Npo" secondAttribute="bottom" constant="167" id="vLl-eS-uZB"/>
                             <constraint firstItem="9SM-S9-EQN" firstAttribute="top" secondItem="J3j-Ph-MUH" secondAttribute="top" id="xKy-jU-TjQ"/>
                         </constraints>
                     </view>
@@ -157,11 +192,12 @@
                     <connections>
                         <outlet property="messageTextView" destination="Pb4-mn-xeC" id="TME-gm-Dhk"/>
                         <outlet property="pickerMessagePrompts" destination="S7g-NK-SdD" id="C1p-MI-j4v"/>
+                        <outlet property="recordAudio" destination="35P-dI-Npo" id="ask-C6-1yC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzS-fJ-ikI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="534" y="517"/>
+            <point key="canvasLocation" x="532.71028037383178" y="516.7386609071275"/>
         </scene>
         <!--Sunshine & Inspiration-->
         <scene sceneID="SyL-32-azR">
@@ -439,10 +475,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUk-J7-QkF">
-                                <rect key="frame" x="391.33333333333331" y="726" width="31.666666666666686" height="24"/>
+                                <rect key="frame" x="398.66666666666669" y="726" width="24.333333333333314" height="24"/>
                                 <color key="tintColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="photo.on.rectangle" catalog="system" symbolScale="large"/>
+                                    <imageReference key="image" image="line.horizontal.3.decrease.circle.fill" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
                                     <action selector="credits:" destination="I0l-7A-HEb" eventType="touchUpInside" id="9J9-hh-jKc"/>
@@ -897,7 +933,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="tMQ-0t-d5F"/>
-        <segue reference="wgF-ow-V4H"/>
+        <segue reference="nbV-AX-efY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
@@ -907,11 +943,11 @@
         <image name="flockofbirds" width="958" height="1341"/>
         <image name="galaxy2" width="1220" height="1829"/>
         <image name="group3" width="1220" height="813"/>
+        <image name="line.horizontal.3.decrease.circle.fill" catalog="system" width="128" height="121"/>
         <image name="messagecomposer1" width="1207" height="1830"/>
         <image name="moon.stars" catalog="system" width="128" height="124"/>
         <image name="moon.stars.fill" catalog="system" width="128" height="124"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="photo.on.rectangle" catalog="system" width="128" height="96"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="sun.max" catalog="system" width="128" height="124"/>

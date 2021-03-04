@@ -12,6 +12,7 @@ import NVActivityIndicatorView
 class MessageComposerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, AVAudioRecorderDelegate {
 
     //MARK: - Outlets
+    @IBOutlet weak var recordAudio: UIButton!
     
     @IBOutlet weak var pickerMessagePrompts: UIPickerView!
     
@@ -19,9 +20,10 @@ class MessageComposerViewController: UIViewController, UIPickerViewDataSource, U
     
     //MARK: - Properties
     
-    var recordButton: UIButton!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
+    var audioURL: URL?
+    var dic:UIDocumentInteractionController?
     
     let prompts = ["Why does the person make you smile?", "What can only this person do?", "What's your fondest memory of them?", "How has this person changed you?", "What makes this person unique?", "Why do you look up to them?", "How do they inspire you?", "What's an adventure you both need?", "What are this person's best talents?", "Why do you brag about them?"]
     
@@ -29,6 +31,7 @@ class MessageComposerViewController: UIViewController, UIPickerViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addCancelKeyboardGestureRecognizer()
         pickerMessagePrompts.dataSource = self
         pickerMessagePrompts.delegate = self
         recordingSession = AVAudioSession.sharedInstance()
@@ -51,12 +54,23 @@ class MessageComposerViewController: UIViewController, UIPickerViewDataSource, U
     }
     
     //MARK: - Actions
+    @IBAction func recordAudio(_ sender: Any) {
+        recordTapped()
+    }
     
-    @IBAction func shareMessage(_ sender: Any) {
-        let shareText = [messageTextView.text]
-//        let shareAudio =
-        let ac = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
-        present(ac, animated: true)
+    @IBAction func shareText(_ sender: Any) {
+        if let shareText = messageTextView.text, !shareText.isEmpty {
+            let ac = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
+            present(ac, animated: true)
+        }
+    }
+    
+    @IBAction func shareAudio(_ sender: Any) {
+    if let shareAudio = audioURL{
+            let dic = UIDocumentInteractionController(url: shareAudio)
+            self.dic = dic
+            dic.presentOptionsMenu(from: self.view.frame, in: self.view, animated: true)
+        }
     }
     
     //MARK: - Methods
@@ -73,17 +87,13 @@ class MessageComposerViewController: UIViewController, UIPickerViewDataSource, U
     }
     
     func loadRecordingUI() {
-        recordButton = UIButton(frame: CGRect(x: 20, y: 620, width: 200, height: 50))
-        //reconstrain the button in a better way.. or just make my own?
-        recordButton.setTitle("Tap to Record Audio", for: .normal)
-        recordButton.titleLabel?.font = UIFont(name: "Noto Sans Myanmar Bold", size: 20)
-        recordButton.titleLabel?.backgroundColor = UIColor.purple
-        recordButton.addTarget(self, action: #selector(recordTapped), for: .touchUpInside)
-        view.addSubview(recordButton)
+        recordAudio.setTitle("Tap to Record Audio", for: .normal)
+        recordAudio.titleLabel?.font = UIFont(name: "Noto Sans Myanmar Bold", size: 15)
     }
     
     func startRecording() {
         let audioFilename = getDocumentsDirectory().appendingPathComponent("maketheirdayrecording.m4a")
+        audioURL = audioFilename
 
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
@@ -97,7 +107,7 @@ class MessageComposerViewController: UIViewController, UIPickerViewDataSource, U
             audioRecorder.delegate = self
             audioRecorder.record()
 
-            recordButton.setTitle("Tap to Stop", for: .normal)
+            recordAudio.setTitle("Tap to Stop", for: .normal)
         } catch {
             finishRecording(success: false)
         }
@@ -113,9 +123,9 @@ class MessageComposerViewController: UIViewController, UIPickerViewDataSource, U
         audioRecorder = nil
 
         if success {
-            recordButton.setTitle("Tap to Re-record", for: .normal)
+            recordAudio.setTitle("Tap to Re-record", for: .normal)
         } else {
-            recordButton.setTitle("Tap to Record", for: .normal)
+            recordAudio.setTitle("Tap to Record", for: .normal)
             // recording failed :(
         }
     }
