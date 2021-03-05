@@ -10,12 +10,18 @@ import NVActivityIndicatorView
 
 class MyCircleSegmentedOptionsViewController: UIViewController {
     
+    //MARK: - Outlets
+    
     @IBOutlet weak var visualView: UIView!
     @IBOutlet weak var listView: UIView!
+    
+    //MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    //MARK: - Actions
     
     @IBAction func switchViews(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {

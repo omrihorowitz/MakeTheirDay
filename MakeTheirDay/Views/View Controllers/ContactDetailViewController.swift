@@ -40,7 +40,7 @@ class ContactDetailViewController: UIViewController {
     @IBAction func favoriteButtonTapped(_ sender: Any) {
         let favoriteArray = ContactController.sharedInstance.contacts.filter({$0.favorite})
         if favoriteArray.count >= 5 && isFavorite == false {
-            let alert = UIAlertController(title: "Easy There, Cowboy!", message: "You can only mark 5 contacts as favorites.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Easy there, cowboy...", message: "You can only mark 5 contacts as favorites.", preferredStyle: .alert)
             
             let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             

@@ -49,7 +49,7 @@ class GalaxyViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    //MARK: - Functions
+    //MARK: - Methods
     
     func fetchUser() {
         UserController.sharedInstance.fetchUser { (result) in

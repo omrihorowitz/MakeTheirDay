@@ -44,7 +44,7 @@ class InspirationTableViewController: UITableViewController {
     }
     
     fileprivate func startAnimation() {
-        let loading = NVActivityIndicatorView(frame: .zero, type: .ballRotateChase, color: .orange, padding: 0)
+        let loading = NVActivityIndicatorView(frame: .zero, type: .ballRotateChase, color: .cyan, padding: 0)
         loading.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loading)
         NSLayoutConstraint.activate([
@@ -56,7 +56,7 @@ class InspirationTableViewController: UITableViewController {
         
         loading.startAnimating()
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
             loading.stopAnimating()
         }
     }
