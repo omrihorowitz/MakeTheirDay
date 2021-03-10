@@ -97,8 +97,8 @@ class ContactDetailViewController: UIViewController {
             case .success(_):
                 self.navigationController?.popViewController(animated: true)
                 
-            case .failure(let error):
-                self.presentErrorToUser(localizedError: error)
+            case .failure(_):
+                print("This app runs on iCloud! Make sure you're signed in to add a contact.")
             }
         }
     }
@@ -116,9 +116,9 @@ class ContactDetailViewController: UIViewController {
     func presentDeleteButtonAlertController() {
         let alert = UIAlertController(title: "Delete Contact", message: "You sure?", preferredStyle: .alert)
         
-        let cancelAction = UIAlertAction(title: "No", style: .default, handler: nil)
+        let cancelAction = UIAlertAction(title: "Nope", style: .default, handler: nil)
         
-        let confirmAction = UIAlertAction(title: "Bye, Felicia", style: .destructive) { (_) in
+        let confirmAction = UIAlertAction(title: "Mmk bye Felicia!", style: .destructive) { (_) in
             
             guard let contact = self.contact else {return}
             

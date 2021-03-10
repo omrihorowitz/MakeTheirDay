@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSApplicationCategoryType</key>
@@ -23,11 +23,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Allow Camera Access for Photos or Video</string>
+	<string>Please allow Camera access if you'd like to take a current photo for your profile or contacts!</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Please Allow Access to Microphone to Record Audio</string>
+	<string>Please allow Microphone access if you'd like to save and share a voice message!</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Please Allow Access to Photo Library for Pictures</string>
+	<string>Please allow Photo Library access if you'd like to set your profile picture or that of your contacts in the app!</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

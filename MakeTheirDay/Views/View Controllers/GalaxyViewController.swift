@@ -4,7 +4,6 @@
 //
 //  Created by Omri Horowitz on 2/25/21.
 //
-
 import UIKit
 import NVActivityIndicatorView
 
@@ -40,7 +39,7 @@ class GalaxyViewController: UIViewController {
     }
     
     @IBAction func credits(_ sender: Any) {
-        let alert = UIAlertController(title: "Credits", message: "📷 • @Unsplash\n🎵🥶 • @mahalo_dj\n🌀 • @ninjaprox", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Credits", message: "📷 • @Unsplash\n🎵🥶 • @mahalo_dj\n🌀 • @ninjaprox\n👩🏼‍🎨 • @sliztoonz", preferredStyle: .alert)
         let okAction = UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default)
         alert.view.tintColor = UIColor.blue  // change text color of the buttons
         alert.view.backgroundColor = UIColor.cyan  // change background color

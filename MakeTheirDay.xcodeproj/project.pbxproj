@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		361317BA2630D61DA4906ACD /* Pods_MakeTheirDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91318669275CEB717E20A0C /* Pods_MakeTheirDay.framework */; };
-		6C06034B25EF06CE00F73F2D /* SoCold.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C06034A25EF06CE00F73F2D /* SoCold.wav */; };
+		6C08741225F943560088000C /* SoCold.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C08741125F943560088000C /* SoCold.wav */; };
 		6C113C4325F14D9F0054BB74 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C113C4225F14D9F0054BB74 /* VideoHelper.swift */; };
 		6C1210CA25DD8543009AA4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210C925DD8543009AA4F4 /* AppDelegate.swift */; };
 		6C1210CC25DD8543009AA4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1210CB25DD8543009AA4F4 /* SceneDelegate.swift */; };
@@ -44,7 +44,7 @@
 /* Begin PBXFileReference section */
 		1F0C6B14BCA08183FE1240FB /* Pods-MakeTheirDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeTheirDay.debug.xcconfig"; path = "Target Support Files/Pods-MakeTheirDay/Pods-MakeTheirDay.debug.xcconfig"; sourceTree = "<group>"; };
 		2E88E2C19411AA08C5D495C8 /* Pods-MakeTheirDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeTheirDay.release.xcconfig"; path = "Target Support Files/Pods-MakeTheirDay/Pods-MakeTheirDay.release.xcconfig"; sourceTree = "<group>"; };
-		6C06034A25EF06CE00F73F2D /* SoCold.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SoCold.wav; sourceTree = "<group>"; };
+		6C08741125F943560088000C /* SoCold.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SoCold.wav; sourceTree = "<group>"; };
 		6C113C4225F14D9F0054BB74 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
 		6C1210C625DD8543009AA4F4 /* MakeTheirDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeTheirDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C1210C925DD8543009AA4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		6C1210DE25DD86B8009AA4F4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6C06034A25EF06CE00F73F2D /* SoCold.wav */,
+				6C08741125F943560088000C /* SoCold.wav */,
 				6C1210C925DD8543009AA4F4 /* AppDelegate.swift */,
 				6C1210CB25DD8543009AA4F4 /* SceneDelegate.swift */,
 				6C1210D225DD8544009AA4F4 /* Assets.xcassets */,
@@ -300,10 +300,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C06034B25EF06CE00F73F2D /* SoCold.wav in Resources */,
 				6C1210D325DD8544009AA4F4 /* Assets.xcassets in Resources */,
 				6C3CC47625EF6D1C00A2CF10 /* Launch Screen.storyboard in Resources */,
 				6C1210D125DD8543009AA4F4 /* Main.storyboard in Resources */,
+				6C08741225F943560088000C /* SoCold.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,13 +523,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MakeTheirDay/MakeTheirDay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3;
+				CURRENT_PROJECT_VERSION = 2.2;
 				DEVELOPMENT_TEAM = W578QLR797;
 				INFOPLIST_FILE = MakeTheirDay/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.OmriHorowitz.MakeTheirDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -545,13 +547,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MakeTheirDay/MakeTheirDay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3;
+				CURRENT_PROJECT_VERSION = 2.2;
 				DEVELOPMENT_TEAM = W578QLR797;
 				INFOPLIST_FILE = MakeTheirDay/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.OmriHorowitz.MakeTheirDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
